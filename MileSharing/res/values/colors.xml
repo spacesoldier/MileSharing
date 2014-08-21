@@ -1,0 +1,7 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="blue_transparent">#161eabed</color> <!--  цвет более прозрачный -->
+    <color name="blue_notsotransparent">#1eabed</color>
+    <color name="white_text_color">#FFFFFF</color>
+</resources>

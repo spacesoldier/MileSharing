@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	
+            <item android:id="@+id/pass_item"
+                  android:icon="@drawable/pass_icon"
+		          android:title="@string/pass_menu"
+		          android:showAsAction="always" />
+            <item android:id="@+id/driver_item"
+                  android:icon="@drawable/driver_icon"
+		          android:title="@string/driver_menu"
+		          android:showAsAction="always" />
+     
+        
+    <!-- 
+    <item android:id="@+id/choose_item"
+          android:icon="@drawable/ic_drawer"
+          android:title="Change Role"
+          android:showAsAction="always">
+
+        <menu>
+            <item android:id="@+id/pass_item"
+                  android:icon="@drawable/pass_icon"
+		          android:title="@string/pass_menu"
+		          android:showAsAction="always" />
+            <item android:id="@+id/driver_item"
+                  android:icon="@drawable/driver_icon"
+		          android:title="@string/driver_menu"
+		          android:showAsAction="always" />
+        </menu>
+    </item>
+    
+     -->
+    
+</menu>

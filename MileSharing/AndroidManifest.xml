@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.soloway.transport.milesharing"
+    android:versionCode="5"
+    android:versionName="0.1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.soloway.city.milesharing.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <!--android:value="AIzaSyBRB9G7X4LraDi3hQiAKh7yqnmHTikrleA"--> 
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value = "AIzaSyDNclU6lNaeAowgGzZW6vUUB5eIv7dQRPI"/>
+
+        <activity
+            android:name="com.soloway.city.milesharing.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.soloway.city.milesharing.MapActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.soloway.city.milesharing.MainMapActivity"
+            android:label="@string/title_activity_main_map" >
+        </activity>
+        <activity
+            android:name="com.soloway.transport.milesharing.MainMilesharingActivity"
+            android:label="@string/title_activity_main_milesharing" >
+        </activity>
+    </application>
+
+</manifest>

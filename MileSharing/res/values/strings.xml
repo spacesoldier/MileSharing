@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MileSharing</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">MileSharing</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="username">Имя пользователя</string>
+    <string name="password">Пароль</string>
+    <string name="passconfirm">Подтвердите пароль</string>
+    <string name="firstname">Имя</string>
+    <string name="lastname">Фамилия</string>
+    <string name="register">Регистрация</string>
+    <string name="cancel">Отмена</string>
+    <string name="email">E-mail</string>
+
+    <string-array name="items">
+        <item>New travel</item>
+        <item>Item 2</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+        <item>Prefernces</item>
+    </string-array>
+    <string-array name="items_pass">
+        <item>Найти машину</item>
+        <item>История</item>
+        <item>Маршрут</item>
+        <item>Люди</item>
+        <item>Настройки</item>
+    </string-array>
+    <string-array name="items_driver">
+        <item>Подвезти</item>
+        <item>История</item>
+        <item>Маршрут</item>
+        <item>Люди</item>
+        <item>Настройки</item>
+    </string-array>
+
+    <string name="pass_menu">Passanger</string>
+    <string name="driver_menu">Driver</string>
+    <string name="title_activity_main_map">MileSharing</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Change Role -&gt;</string>
+    <string name="login">Login</string>
+    <string name="login_error">No such user or wrong password.</string>
+    <string name="new_user_call">Sign Up</string>
+    <string name="user_login_title">User Login</string>
+    <string name="user_register_title">Registration</string>
+    <string name="title_activity_main_milesharing">MileSharing</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+</resources>

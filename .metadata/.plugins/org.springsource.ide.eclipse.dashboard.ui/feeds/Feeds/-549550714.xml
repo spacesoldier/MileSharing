@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Spring</title>
+  <link rel="alternate" href="https://spring.io/blog" />
+  <link rel="self" href="https://spring.io/blog.atom" />
+  <id>http://spring.io/blog.atom</id>
+  <icon>https://spring.io/favicon.ico</icon>
+  <updated>2014-05-22T14:41:28Z</updated>
+  <entry>
+    <title>Spring Web Services 2.2.0 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/22/spring-web-services-2-2-0-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Arjen Poutsma</name>
+    </author>
+    <id>tag:spring.io,2014-05-22:1587</id>
+    <updated>2014-05-22T14:41:28Z</updated>
+    <content type="html">&lt;p&gt;I'm pleased to announce that Spring Web Services 2.2.0.RELEASE has been released! This is the first release in the 2.2 release cycle. The main new feature in 2.2 is the introduction of code configuration support for Spring-WS. This means that you can now configure Spring-WS with a simple &lt;code&gt;@EnableWs&lt;/code&gt; annotation. For instance:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Configuration&lt;/span&gt;
+&lt;span class="nd"&gt;@EnableWs&lt;/span&gt;
+&lt;span class="nd"&gt;@ComponentScan&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;basePackageClasses&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt; &lt;span class="n"&gt;MyConfiguration&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;class&lt;/span&gt; &lt;span class="o"&gt;})&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;MyWsConfiguration&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+  &lt;span class="c1"&gt;// @Beans go here&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;For more information about this topic, refer to the &lt;a href="http://repo.spring.io/libs-release-local/org/springframework/ws/spring-ws/2.2.0.RELEASE/spring-ws-2.2.0.RELEASE-docs.zip!/api/org/springframework/ws/config/annotation/EnableWs.html"&gt;javadoc of @EnableWs&lt;/a&gt;. You can also read more about this new feature in the &lt;a href="http://repo.spring.io/libs-release-local/org/springframework/ws/spring-ws/2.2.0.RELEASE/spring-ws-2.2.0.RELEASE-docs.zip!/reference/html/index.html"&gt;updated reference documentation&lt;/a&gt;. To view a complete list of changes see the &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10060&amp;amp;version=12850"&gt;changelog&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Security 3.2.4 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/21/spring-security-3-2-4-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Rob Winch</name>
+    </author>
+    <id>tag:spring.io,2014-05-21:1586</id>
+    <updated>2014-05-21T22:25:47Z</updated>
+    <content type="html">&lt;p&gt;I'm pleased to announce the release of Spring Security 3.2.4. This release includes a number of bug fixes. To view a list of changes see the &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10040&amp;amp;version=14496"&gt;changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://docs.spring.io/spring-security/site/docs/3.2.4.RELEASE/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/3.2.4.RELEASE/apidocs/"&gt;Javadoc&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/3.2.x/guides/"&gt;Guides&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring LDAP 2.0.2 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/21/spring-ldap-2-0-2-released" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Rob Winch</name>
+    </author>
+    <id>tag:spring.io,2014-05-21:1585</id>
+    <updated>2014-05-21T21:57:53Z</updated>
+    <content type="html">&lt;p&gt;I'm pleased to announce the release of Spring LDAP 2.0.2.RELEASE. The highlights of this release include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://jira.spring.io/browse/LDAP-300"&gt;LDAP-300&lt;/a&gt; - Fix potential NullPointerException when using Spring LDAP in a uber jar &lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://jira.spring.io/browse/LDAP-299"&gt;LDAP-299&lt;/a&gt; - Deprecation of spring-ldap-ldif-batch module in favor of using classes within Spring Batch&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;For additional information on the release, refer to the &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10071&amp;amp;version=14505"&gt;changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://docs.spring.io/spring-ldap/docs/2.0.2.RELEASE/reference/"&gt;Reference&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-ldap/docs/2.0.2.RELEASE/apidocs/"&gt;Javadoc&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Grails 2.4 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/21/grails-2-4-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Graeme Rocher</name>
+    </author>
+    <id>tag:spring.io,2014-05-21:1584</id>
+    <updated>2014-05-21T14:57:00Z</updated>
+    <content type="html">&lt;p&gt;Today we are pleased to announce the release of &lt;a href="https://grails.org/2.4.0+Release+Notes"&gt;Grails 2.4&lt;/a&gt;. This is the final release in the 2.x line of releases and includes a number of significant updates.&lt;/p&gt;
+
+&lt;p&gt;Most importantly Grails 2.4.x ships with key pieces of the &lt;a href="https://spring.io/platform"&gt;Spring IO platform&lt;/a&gt;, including &lt;a href="http://spring.io/blog/2014/05/07/groovy-2-3-released"&gt;Groovy 2.3&lt;/a&gt; and &lt;a href="http://spring.io/blog/2014/05/20/spring-framework-4-0-5-3-2-9-released-next-stop-4-1"&gt;Spring 4.0.5&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-release-highlights" class="anchor" href="#release-highlights"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Release Highlights&lt;/h2&gt;
+
+&lt;p&gt;In addition to the inclusion of the latest versions of Spring and Groovy there are a number of key new features in this release, including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Standalone GORM &amp;amp; GSP&lt;/strong&gt; - Yes, &lt;a href="http://spring.io/guides/gs/accessing-data-gorm/"&gt;GORM for Hibernate 4&lt;/a&gt; and &lt;a href="http://spring.io/guides/gs/accessing-data-gorm-mongodb/"&gt;GORM for MongoDB&lt;/a&gt; can both be used outside of Grails in a Spring Boot application or Groovy script.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Static Compilation&lt;/strong&gt; - Using extensions to Groovy's static compilation features, it is now possible to statically compile many interactions with the Grails framework, including dynamic finders.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Asset Pipeline Plugin&lt;/strong&gt; - Grails 2.4 replaces the previous Resources plugin with the new &lt;a href="http://grails.org/plugin/asset-pipeline"&gt;Asset Pipeline&lt;/a&gt; plugin for managing static assets (CSS, JavaScript etc.).&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;GORM Subqueries&lt;/strong&gt; - GORM has been enhanced, with extensive support for correlated subqueries.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;New Maven Plugin&lt;/strong&gt; - The &lt;a href="https://github.com/grails/grails-maven"&gt;Maven plugin&lt;/a&gt; has been rewritten to use Aether for dependency resolution and now works with multiple versions of Grails.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;There is a more &lt;a href="http://grails.org/doc/2.4.x/guide/introduction.html#whatsNew24"&gt;comprehensive guide to all the new features&lt;/a&gt; available on the Grails website.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-grails-30" class="anchor" href="#grails-30"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Grails 3.0&lt;/h2&gt;
+
+&lt;p&gt;The focus of our work now shifts to Grails 3.0, which will be a reimagination of the framework you know and love. &lt;/p&gt;
+
+&lt;p&gt;Grails 3.0 will be based on &lt;a href="http://projects.spring.io/spring-boot/"&gt;Spring Boot&lt;/a&gt;, feature advanced &lt;a href="http://gradle.org"&gt;Gradle&lt;/a&gt; support and the ability to build a range of application types from Micro services to traditional web applications.&lt;/p&gt;
+
+&lt;p&gt;We would love to hear your feedback on the release. To report issues head &lt;a href="http://jira.grails.org/browse/GRAILS"&gt;over to JIRA&lt;/a&gt; and to join the discussion checkout our new &lt;a href="https://groups.google.com/forum/#!forum/grails-dev-discuss"&gt;Google Group&lt;/a&gt; or &lt;a href="http://stackoverflow.com/tags/grails"&gt;post questions on Stack Overflow&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cheers,
+Graeme&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>What's New In Spring Data Dijkstra?</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/21/what-s-new-in-spring-data-dijkstra" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Oliver Gierke</name>
+    </author>
+    <id>tag:spring.io,2014-05-02:1552</id>
+    <updated>2014-05-21T12:47:00Z</updated>
+    <content type="html">&lt;p&gt;We've &lt;a href="https://spring.io/blog/2014/05/20/spring-data-release-train-dijkstra-goes-ga"&gt;just announced&lt;/a&gt; the availability of the GA release of the Spring Data release train named Dijkstra. I'd like to use this chance to walk you through some of the features we added in this release.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-5-new-modules-joining-the-train" class="anchor" href="#5-new-modules-joining-the-train"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;5 new modules joining the train&lt;/h2&gt;
+
+&lt;p&gt;The first big feature the release includes is the addition of 5 modules to the release train. Most of them have been around for quite a while but going forward we'll release them in sync with the other modules. The newly added modules are Spring Data &lt;a href="https://github.com/spring-projects/spring-data-elasticsearch"&gt;Elasticsearch&lt;/a&gt;, &lt;a href="http://projects.spring.io/spring-data-cassandra/"&gt;Cassandra&lt;/a&gt;, &lt;a href="http://projects.spring.io/spring-data-couchbase/"&gt;Couchbase&lt;/a&gt;, &lt;a href="http://projects.spring.io/spring-data-gemfire/"&gt;Gemfire&lt;/a&gt; and &lt;a href="http://projects.spring.io/spring-data-redis/"&gt;Redis&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-spring-data-commons" class="anchor" href="#spring-data-commons"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Spring Data Commons&lt;/h2&gt;
+
+&lt;p&gt;A lot of the improvements of a release train usually end up in the Commons module so that the individual store modules can actually all benefit from the newly added features. Here are the most important ones for Dijkstra:&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a name="user-content-support-for-wrapper-types-as-return-values" class="anchor" href="#support-for-wrapper-types-as-return-values"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Support for wrapper types as return values&lt;/h3&gt;
+
+&lt;p&gt;For Spring Data repository methods that are declared to return a single instance of the domain type, the repository manages return &lt;code&gt;null&lt;/code&gt; in case no result can be obtained. However, if we started the APIs from scratch instead of returning the instance directly, we probably rather would've used an &lt;code&gt;Optional&lt;/code&gt; to make sure the clients don't accidentally forget the &lt;code&gt;null&lt;/code&gt; checks.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Optional&lt;/code&gt; is a type provided by quite a few Java libraries these days. Google Guava has it and even more importantly, JDK 8 provides one as well. So with the Dijkstra release train we ship the possibility to use these types as wrappers for your return types and let the Spring Data repository infrastructure automatically wrap &lt;code&gt;null&lt;/code&gt;s for you.&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;CustomerRepository&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;Repository&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Customer&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Long&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+  &lt;span class="n"&gt;Optional&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Customer&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;findOne&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Long&lt;/span&gt; &lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+
+  &lt;span class="n"&gt;Optional&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Customer&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;findByEmailAddress&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;EmailAddress&lt;/span&gt; &lt;span class="n"&gt;emailAddress&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The first method you see here is a variant of &lt;code&gt;CrudRepository.findOne(…)&lt;/code&gt;. Note, that the repository interface does not extend &lt;code&gt;CrudRepository&lt;/code&gt; as this would result in a compile error as we cannot redeclare the &lt;code&gt;findOne(…)&lt;/code&gt; method and change the return type. Thus, we recommend to simply craft your own base repository interface (as described in &lt;a href="http://docs.spring.io/spring-data/jpa/docs/current/reference/html/repositories.html#repositories.definition-tuning"&gt;the reference documentation&lt;/a&gt; in case you'd like to change the behavior of &lt;code&gt;findOne(…)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The second method is a simple query method that uses query derivation to let the Spring Data infrastructure derive a query from the method name. We also detect &lt;code&gt;Optional&lt;/code&gt; as a wrapper type here, execute the query and automatically wrap the result into an &lt;code&gt;Optional&lt;/code&gt; instance.&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a name="user-content-asynchronous-repository-method-invocations" class="anchor" href="#asynchronous-repository-method-invocations"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Asynchronous repository method invocations&lt;/h3&gt;
+
+&lt;p&gt;In a related way we started to add asynchronous execution capabilities to repository methods. A query method can now return a &lt;code&gt;Future&amp;lt;T&amp;gt;&lt;/code&gt; which will cause it to be executed asynchronously if it is annotated with &lt;code&gt;@Async&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;CustomerRepository&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;Repository&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Customer&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Long&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+  &lt;span class="nd"&gt;@Async&lt;/span&gt;
+  &lt;span class="nd"&gt;@Query&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;" … long running query declaration … "&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+  &lt;span class="n"&gt;Future&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;List&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Customer&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;findByLongRunningQuery&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;lastname&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The execution is then based on the Spring support for &lt;a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/scheduling.html#scheduling-annotation-support-async"&gt;asynchronous method invocations&lt;/a&gt;. We're also looking into more advanced asynchronous execution models like promises (potentially based on &lt;a href="https://github.com/reactor/reactor"&gt;Project Reactor&lt;/a&gt;) to be added in future versions of Spring Data.&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a name="user-content-geo-spatial-types" class="anchor" href="#geo-spatial-types"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Geo-spatial types&lt;/h3&gt;
+
+&lt;p&gt;The MongoDB module (amongst others) always had support for Mongo's geo-spatial operations - both in &lt;code&gt;MongoTemplate&lt;/code&gt; as well as in the repository abstraction. With the current release, we moved the core value types (e.g. &lt;code&gt;Shape&lt;/code&gt;, &lt;code&gt;Point&lt;/code&gt;, &lt;code&gt;Box&lt;/code&gt;, &lt;code&gt;Distance&lt;/code&gt; etc.) into the Spring Data Commons module. This will allow you to ubiquitously refer to the geo types and interact with all of the Spring Data modules supporting geo-spatial functionality without mapping those types into each other. Check out the &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.8.0.RELEASE/api/index.html?org/springframework/data/geo/package-summary.html"&gt;JavaDoc&lt;/a&gt; for details.&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a name="user-content-slices" class="anchor" href="#slices"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Slices&lt;/h3&gt;
+
+&lt;p&gt;Spring Data has always had support for pagination in the repository programming model. It allows you to access data on a page-by-page basis to iterate through large data sets. Besides the plain page content, the &lt;code&gt;Page&lt;/code&gt; interface exposes API to find out about the total number of elements and pages available. &lt;/p&gt;
+
+&lt;p&gt;Calculating this number can be quite resource intensive (as usually an additional query has to be executed) and often times the only meta aspect that is interesting about a page is whether it has a next one, so that clients can go on retrieving more data. This is a pattern you can see in you Facebook time line for example.&lt;/p&gt;
+
+&lt;p&gt;The Dijkstra release now introduces a stripped down version of a &lt;code&gt;Page&lt;/code&gt; called &lt;code&gt;Slice&lt;/code&gt; which allows you to find out about whether the current slice has a following one:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;BlogPostRepository&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;Repository&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;BlogPost&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Long&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+  &lt;span class="n"&gt;Slice&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;BlogPost&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;findByAuthorOrderByDateDesc&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Author&lt;/span&gt; &lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Pageable&lt;/span&gt; &lt;span class="n"&gt;pageable&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can now use the &lt;code&gt;Pageable&lt;/code&gt; to express the page number and size you'd like to obtain and the Spring Data infrastructure will read one more item than requested and use the presence or non-presence of it as indicator for the next slice to be available.&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a name="user-content-derived-delete-queries" class="anchor" href="#derived-delete-queries"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Derived delete queries&lt;/h3&gt;
+
+&lt;p&gt;The query method derivation functionality now supports &lt;code&gt;deleteBy…&lt;/code&gt; and &lt;code&gt;removeBy…&lt;/code&gt; method prefixes to derive queries that remove managed domain types based on a given criteria.&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;BlogPostRepository&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;Repository&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;BlogPost&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Long&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+  &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;deleteByDateBefore&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Date&lt;/span&gt; &lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This has been implemented in the JPA, MongoDB and Solr modules for Dijkstra and will be added to other store modules going forward.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-jpa-21-support" class="anchor" href="#jpa-21-support"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;JPA 2.1 support&lt;/h2&gt;
+
+&lt;p&gt;A core theme during the development of the JPA module for Dijkstra has been support for JavaEE 7 /JPA 2.1 features. The core areas we tackle with this release is the support for entity graphs on query executions as well as the execution of stored procedures.&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a name="user-content-entity-graphs" class="anchor" href="#entity-graphs"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Entity graphs&lt;/h3&gt;
+
+&lt;p&gt;Assume we have the following domain type definition:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Entity&lt;/span&gt;
+&lt;span class="nd"&gt;@NamedEntityGraph&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"summary"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;attributeNodes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt; 
+  &lt;span class="nd"&gt;@NamedAttributeNode&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"firstname"&lt;/span&gt;&lt;span class="o"&gt;),&lt;/span&gt;
+  &lt;span class="nd"&gt;@NamedAttributeNode&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"lastname"&lt;/span&gt;&lt;span class="o"&gt;)})&lt;/span&gt;
+&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Customer&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+  &lt;span class="c1"&gt;// properties ommitted&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;We can now refer to the named entity graph through the &lt;code&gt;@EntityGraph&lt;/code&gt; annotation to indicate we want this graph to be applied to the query being executed.&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;CustomerRepository&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;Repository&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Customer&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Long&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+  &lt;span class="nd"&gt;@EntityGraph&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"summary"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+  &lt;span class="n"&gt;Optional&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Customer&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;findByEmailAddress&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;EmailAddress&lt;/span&gt; &lt;span class="n"&gt;emailAddress&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This will cause only the &lt;code&gt;firstname&lt;/code&gt; and &lt;code&gt;lastname&lt;/code&gt; property being loaded eagerly and all others prepared to be loaded lazily on access.&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a name="user-content-stored-procedures" class="anchor" href="#stored-procedures"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Stored procedures&lt;/h3&gt;
+
+&lt;p&gt;JPA 2.1 added the ability of executing stored procedures through the &lt;code&gt;EntityManager&lt;/code&gt; API. Similarly to the sample above, the metadata for a stored procedure can be declared at the domain type. Assume you want to trigger a stored procedure that randomly creates passwords for customers:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Entity&lt;/span&gt;
+&lt;span class="nd"&gt;@NamedStoredProcedureQuery&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"Customer.generateNewPassword"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; 
+  &lt;span class="n"&gt;procedureName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"generateNewPassword"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;parameters&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="nd"&gt;@StoredProcedureParameter&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;
+      &lt;span class="n"&gt;mode&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;ParameterMode&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;IN&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"username"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;type&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;),&lt;/span&gt;
+    &lt;span class="nd"&gt;@StoredProcedureParameter&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;
+      &lt;span class="n"&gt;mode&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;ParameterMode&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;OUT&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"password"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;type&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;)})&lt;/span&gt;
+&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Customer&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+  &lt;span class="c1"&gt;// properties ommitted&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The stored procedure can be executed using a repository query method like this:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;CustomerRepository&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;Repository&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Customer&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Long&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+  &lt;span class="nd"&gt;@Procedure&lt;/span&gt;
+  &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;generateNewPassword&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nd"&gt;@Param&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"username"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;username&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;By default we will use the stored procedure meta-data we find using the well-known &lt;code&gt;DomainType.methodName&lt;/code&gt; pattern and match this to the method declaration. For very simple procedure mappings like the one shown here, you could even omit the meta-data declaration as all of the meta-data can be derived from the method name. Find out more about the stored procedure support in the &lt;a href="http://docs.spring.io/spring-data/jpa/docs/current/reference/html/jpa.repositories.html#jpa.stored-procedures"&gt;reference documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-transaction-support-for-redis" class="anchor" href="#transaction-support-for-redis"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Transaction support for Redis&lt;/h2&gt;
+
+&lt;p&gt;The latest version of the Redis module adds functionality to accumulate a set of operations that can be executed in batch. To achieve this &lt;code&gt;RedisTemplate&lt;/code&gt; can now integrate with Spring's transaction synchronization by getting the &lt;code&gt;enableTransactionSupport&lt;/code&gt; property configured to &lt;code&gt;true&lt;/code&gt; (it defaults to &lt;code&gt;false&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Enabling this feature will cause the &lt;code&gt;RedisConnection&lt;/code&gt; to be bound to the current &lt;code&gt;Thread&lt;/code&gt; and the &lt;code&gt;MULTI&lt;/code&gt; command issued which allows the underlying Redis driver to potentially perform command queuing. If the transaction finishes without errors, the &lt;code&gt;EXEC&lt;/code&gt; command is issued, if it fails, the accumulated commands are discarded using the &lt;code&gt;DISCARD&lt;/code&gt; command. &lt;/p&gt;
+
+&lt;p&gt;Once enabled, connections will be bound to the current Thread, making sure that every write operation is piped to the same connection and queued up  waiting for the surrounding transaction to finish. Read operations - e.g. the &lt;code&gt;KEYS&lt;/code&gt; command - will still be executed immediately by using a fresh, non-thread-bound connection.&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Bean&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;StringRedisTemplate&lt;/span&gt; &lt;span class="nf"&gt;redisTemplate&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+    &lt;span class="n"&gt;StringRedisTemplate&lt;/span&gt; &lt;span class="n"&gt;template&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 
+      &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;StringRedisTemplate&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;redisConnectionFactory&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
+    &lt;span class="c1"&gt;// Enable transaction synchronization support&lt;/span&gt;
+    &lt;span class="n"&gt;template&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;setEnableTransactionSupport&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;template&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;code&gt;RedisTemplate&lt;/code&gt; configured like this can then be used with the following semantics:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// Executed on thread bound connection&lt;/span&gt;
+&lt;span class="n"&gt;template&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;opsForValue&lt;/span&gt;&lt;span class="o"&gt;().&lt;/span&gt;&lt;span class="na"&gt;set&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"foo"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"bar"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+
+&lt;span class="c1"&gt;// Read operation executed on separate connection&lt;/span&gt;
+&lt;span class="n"&gt;template&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;keys&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+
+&lt;span class="c1"&gt;// Returns null as values set within transaction are not visible&lt;/span&gt;
+&lt;span class="c1"&gt;// prior to transaction flush&lt;/span&gt;
+&lt;span class="n"&gt;template&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;opsForValue&lt;/span&gt;&lt;span class="o"&gt;().&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"foo"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-complex-query-support-in-spring-data-solr" class="anchor" href="#complex-query-support-in-spring-data-solr"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Complex query support in Spring Data Solr&lt;/h2&gt;
+
+&lt;p&gt;Creating more complex queries using Spring Data Solr's criteria API has been requested for quite a while. So we decided to rewrite parts of the implementation leaving the API compatible to its prior versions. &lt;/p&gt;
+
+&lt;p&gt;Basically we moved away from the rather flat representation towards a tree like model preserving all the fluent API style we've been used to.&lt;/p&gt;
+
+&lt;p&gt;A Solr query &lt;code&gt;q=name:solr OR (type:spring AND category:data)&lt;/code&gt; can now be expressed as:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;SimpleQuery&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;
+  &lt;span class="n"&gt;where&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"name"&lt;/span&gt;&lt;span class="o"&gt;).&lt;/span&gt;&lt;span class="na"&gt;is&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"solr"&lt;/span&gt;&lt;span class="o"&gt;).&lt;/span&gt;&lt;span class="na"&gt;or&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;
+    &lt;span class="n"&gt;where&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"type"&lt;/span&gt;&lt;span class="o"&gt;).&lt;/span&gt;&lt;span class="na"&gt;is&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"spring"&lt;/span&gt;&lt;span class="o"&gt;).&lt;/span&gt;&lt;span class="na"&gt;and&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"category"&lt;/span&gt;&lt;span class="o"&gt;).&lt;/span&gt;&lt;span class="na"&gt;is&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"data"&lt;/span&gt;&lt;span class="o"&gt;)));&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-projections-in-spring-data-rest" class="anchor" href="#projections-in-spring-data-rest"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Projections in Spring Data REST&lt;/h2&gt;
+
+&lt;p&gt;A very common requirement for the REST resources exposed by Spring Data REST has been to be able to craft custom representations. This means, users wanted to either reduce the number of properties rendered in the response or inline associated entities to save server round trips. With Spring Data REST 2.1 we now ship a possibility to define custom projections on the server side. To do so, you declare an interface to contain exactly the properties you'd like to expose:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Projection&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"summary"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;types&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Order&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;OrderSummary&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+  &lt;span class="n"&gt;LocalDate&lt;/span&gt; &lt;span class="nf"&gt;getOrderedDate&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+
+  &lt;span class="n"&gt;CustomerSummary&lt;/span&gt; &lt;span class="nf"&gt;getCustomer&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+
+  &lt;span class="nd"&gt;@Value&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"#{@shop.calculateTotal(target)}"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+  &lt;span class="n"&gt;Money&lt;/span&gt; &lt;span class="nf"&gt;getTotal&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This interface can be placed in the same package (or a sub-package) that &lt;code&gt;Order&lt;/code&gt; resides in and will be auto-detected by Spring Data REST. It will cause all resources that expose a single order or a collection of orders to carry an additional parameter in the URI template to indicate the projection capability:&lt;/p&gt;
+
+&lt;div class="highlight highlight-javascript"&gt;&lt;pre&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nx"&gt;_links&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;orders&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nx"&gt;href&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"…/orders{?projection}"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;templated&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If a client now expands the template with &lt;code&gt;summary&lt;/code&gt; for &lt;code&gt;projection&lt;/code&gt;, we'll create a proxy on the server side, that will be handed over to Jackson for marshaling. Every getter will be forwarded to a property lookup on the actual target class (in this case &lt;code&gt;Order&lt;/code&gt;). &lt;/p&gt;
+
+&lt;p&gt;In the example above &lt;code&gt;getCustomer()&lt;/code&gt; refers to a related entity which would've been exposed as a link only in the non-projection scenario. By using the projection, we detect that the return type of the method is not &lt;code&gt;Customer&lt;/code&gt;. This will cause in turn a projecting proxy to be created so that you get full control over the properties exposed. The projection interfaces can of course carry Jackson annotations to further customize the representation rendered. &lt;/p&gt;
+
+&lt;p&gt;For advanced use cases you can even equip the projection methods with &lt;code&gt;@Value&lt;/code&gt; to return the result of a SpEL expression to the marshaller. In our sample here, we invoke a method on a Spring bean named &lt;code&gt;shop&lt;/code&gt; and hand the proxy target instance to it to calculate the order total, which could consider rebates, taxes etc.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-summary" class="anchor" href="#summary"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;With these elected examples I hope I could pique your curiosity to explore the modules contained in the Dijkstra release train. We're now going to continue our mission to simplify the implementation of data access layers with the launch of the next release train called &lt;a href="http://www.amazon.com/Eric-Evans/e/B001KDCO2I"&gt;Evans&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring  - May 20th, 2014</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/21/this-week-in-spring-may-20th-2014" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2014-05-21:1583</id>
+    <updated>2014-05-21T05:32:00Z</updated>
+    <content type="html">&lt;p&gt;Welcome back to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I'm in &lt;a href="http://2014.geecon.org/"&gt;Krakow, Poland for Geecon&lt;/a&gt;, the Polish developer conference where, of course, I'll be speaking to developers about Spring. (and, maybe, Spring). If you're around, find me, I'll be wearing the giant Spring leaf t-shirt! :) &lt;/p&gt;
+
+&lt;p&gt;Other than that, there's a lot to get through so let's get to it! &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;In preparation for the upcoming Spring IO Platform, Spring Data release train Dijkstra has been released!  This is a tremendous release train that includes: JPA, MongoDB, Neo4J, Apache Solr, Couchbase, Cassandra, Elasticsearch, Gemfire, Redis and Data REST!  Congrats to the &lt;a href="https://www.twitter.com/springdata"&gt;Spring Data Team&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;
+&lt;a href="http://spring.io/blog/2014/05/14/spring-boot-1-1-0-m1-available-now"&gt;Spring Boot 1.1.0 M1&lt;/a&gt; is now available and introduces MongoDB and Gemfire support, as well as improved actuator metrics and health endpoints.&lt;/li&gt;
+  &lt;li&gt;Final maintenance releases for the Spring Framework 3.2.x and 4.0.x versions are &lt;a href="http://spring.io/blog/2014/05/20/spring-framework-4-0-5-3-2-9-released-next-stop-4-1"&gt;now available&lt;/a&gt;! &lt;/li&gt;
+  
+  &lt;li&gt;Spring Integration ninja (rockstar!) Artem Bilan   put together a nice post introducing all the amazing Java configuration support &lt;a href="http://spring.io/blog/2014/05/08/spring-integration-java-dsl-milestone-1-released"&gt;in the nascent Spring Integration Java configuration DSL&lt;/a&gt;, which builds upon the basic &lt;code&gt;@EnableIntegration&lt;/code&gt; support available in the just-released Spring Integration 4.0. You should read that post. Seriously.  I want to steal some of Artem's thunder by excerpting this one amazing code-snippet:
+    &lt;p&gt;&lt;code&gt;java
+      @Bean IntegrationFlow helloWorldFlow() {
+      return IntegrationFlows.from("helloWorldInput")
+      .filter("World"::equals)
+      .transform("Hello "::concat)
+      .handle(System.out::println)
+      .get();
+      } &lt;/code&gt; Yep! That's a Spring Integration flow that handles input messages, &lt;code&gt;filter&lt;/code&gt;s them, &lt;code&gt;transform&lt;/code&gt;s them, and then gives them to the escape-hatch method, &lt;code&gt;handle&lt;/code&gt;, which lets the developer insert any behavior into the mix. Remember, you can change anything about this - including where it gets the messages from and where it writes the messages to. Indeed, the output of one flow could be the input to another.  Congratulations, Spring Integration team! Also, make sure to &lt;a href="http://spring.io/blog/2014/05/15/webinar-replay-spring-integration-4-0-the-new-frontier"&gt;check out the launch webinar replay&lt;/a&gt;!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I know I mentioned this last week, but it's &lt;em&gt;so&lt;/em&gt; worth a re-read! &lt;a href="http://spring.io/blog/2014/05/07/groovy-2-3-released"&gt;Groovy 2.3.0 is here&lt;/a&gt;! (Hah! Gotcha! This week's link was to a different post by the same author on the subject of the Groovy 2.3.0 release! But aren't you glad you read it, anyway?) Go, Groovy, go!&lt;/li&gt;
+  &lt;li&gt;My pal Pieter Humphrey has done a nice &lt;a href="http://spring.io/blog/2014/05/19/demo-zero-to-stream-processing-in-7-minutes-with-spring-xd"&gt;introductory screencast on Spring XD&lt;/a&gt; - showing how to get up and running doing stream processing, and wiring it to an analytics dashboard in less than 7 minutes.  XD uses a deceptively simple DSL (domain specific language) and no Java code - it's never been easier to work with Hadoop.&lt;/li&gt;
+  &lt;li&gt;Spring Security lead Rob Winch has been moving heaven and earth &lt;a href="http://spring.io/blog/2014/05/07/preview-spring-security-test-method-security"&gt;to make unit-testing secure applications easier than ever&lt;/a&gt;.  In this first installment of a new series, Rob looks at new annotations designed to stand in place of a live-fire Spring Security apparatus to &lt;em&gt;mock&lt;/em&gt; a &lt;code&gt;Principal&lt;/code&gt;, a &lt;code&gt;UserDetailsService&lt;/code&gt;, and more. Check it out and stay tuned for more!&lt;/li&gt;
+&lt;li&gt;Speaking of Rob Winch, he gave an epic &lt;a href="http://spring.io/blog/2014/05/12/springone2gx-2013-replay-getting-started-with-spring-security-3-2"&gt;introduction to Spring Security at SpringOne2GX 2013 last year&lt;/a&gt;. This is a perfect place to jump onboard if you're new to Spring Security.&lt;/li&gt;
+&lt;li&gt;New Relic's Ashley Puls was kind enough to do a webinar with your humble author on &lt;a href="http://spring.io/blog/2014/05/08/webinar-replay-web-application-diagnostics-with-java-and-javascript"&gt;Web Application Diagnostics using New Relic&lt;/a&gt;. Thanks, Ashley! I'll be very honest, this webinar was &lt;em&gt;super&lt;/em&gt; informative for me.   I knew just a little about New Relic, and in working through the development of the webinar I learned about a zillion and five use cases that are well served by New Relic. Really cool stuff!  &lt;/li&gt;
+&lt;li&gt;Also published this week - a SpringOne2GX 2013 Replay by Emad Benjamin and Guillermo Tantucho: &lt;a href="http://spring.io/blog/2014/05/20/springone2gx-2013-replay-virtualizing-and-tuning-large-scale-java-platforms"&gt;Virtualizing and Tuning Large Scale Java Platforms&lt;/a&gt;. This goes over JVM memory tuning and all the tricks and tips for getting Java to run well on a virtualized environment.&lt;/li&gt;
+&lt;li&gt;SpringOne2GX 2013 replay - a great talk from SAS Software: &lt;a href="http://spring.io/blog/2014/05/20/springone2gx-2013-replay-migrating-from-wls-was-jboss-to-pivotal-tc-server"&gt;Migrating from WebLogic, WebSphere, JBoss to Pivotal tcServer&lt;/a&gt;. This might go well with a recent post on &lt;a href="http://bit.ly/1sJaNMr"&gt;why App Servers are dead&lt;/a&gt; by Eberhard Wolff. &lt;/li&gt;
+&lt;li&gt;Do you &lt;em&gt;love&lt;/em&gt; Spring's new home on the web, &lt;a href="http://spring.io/blog/2014/05/12/springone2gx-2013-replay-spring-io-inside-and-out"&gt;spring.io&lt;/a&gt;, as much as I do? Want to learn more? Check out this talk by project lead and Spring ninja Chris Beams  on the makeup of the site, its development, and deployment. &lt;/li&gt;
+&lt;li&gt;Last week, Spring Data Neo4j lead and graph-ninja Michael Hunger and I gave a talk on Spring Boot and Neo4j. This talk was fun for me because it gave me a lot of excuses to play with Neo4j. In point of fact, Michael and I are doing a webinar on about the same subject on the 20th of May (that's 7 days away!), so come see what we've come up with. In the meantime, you may want to &lt;a href="http://java.dzone.com/articles/neo4j-cypher-creating-time"&gt;check out this recent post&lt;/a&gt; on creating a time-tree with Cypher, the language that Michael works on that's used to drive interactions with Neo4j.  That post was, of course, a response to &lt;em&gt;another&lt;/em&gt; post that Michael put together on &lt;a href="http://java.dzone.com/articles/importing-forests-neo4j"&gt;&lt;em&gt;importing forests into Neo4j&lt;/em&gt;&lt;/a&gt;, also worth a read!&lt;/li&gt;
+&lt;li&gt;I quite liked this post introducing &lt;a href="http://vasya10.wordpress.com/2014/05/03/the-groovyspringbootbatchgormgroovydslbeanfactory/"&gt;how to setup a Spring Batch job using Spring Boot&lt;/a&gt;. The author found a comfortable configuration-middle ground in the Groovy &lt;code&gt;BeanBuilder&lt;/code&gt; support, and  describes it nicely in this post    &lt;/li&gt;
+&lt;li&gt;Moritz Schulze  has put together a very nice post, following others in the series, &lt;a href="http://blog.techdev.de/testing-a-secured-spring-data-rest-service-with-java-8-and-mockmvc/"&gt;on how to integration test REST services&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Are you using Spring Boot and want to use Spock? Netflix engineer &lt;a href="http://github.com/tomaslin/gs-spring-boot-spock"&gt;Tomas Lin has put together an example on his GitHug page&lt;/a&gt;. Check it out!&lt;/li&gt;
+&lt;li&gt;Jakub Kubrynski has put together a nice post on how to use Spring Boot's  &lt;code&gt;org.springframework.boot.actuate.system.ApplicationPidListener&lt;/code&gt; (which Jakub contributed - thanks Jakub!) - to work with the &lt;a href="http://java.dzone.com/articles/managing-spring-boot"&gt;application's process identifier (&lt;code&gt;PID&lt;/code&gt;)&lt;/a&gt;. Nice!&lt;/li&gt;
+&lt;li&gt;Meltdown 1.0.0 has been released! Meltdown is a &lt;a href="http://blog.clojurewerkz.org/blog/2014/04/29/meltdown-1-dot-0-0-is-released/"&gt;Clojure interface to the Reactor project&lt;/a&gt;. So... functional programming and stream processing inside a lisp-like language? A dream! Check it out!&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Data Release Train Dijkstra Goes GA</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/20/spring-data-release-train-dijkstra-goes-ga" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Oliver Gierke</name>
+    </author>
+    <id>tag:spring.io,2014-05-20:1578</id>
+    <updated>2014-05-20T20:27:00Z</updated>
+    <content type="html">&lt;p&gt;Hot on the heels of the Spring 3.2.9 and 4.0.5 releases, I am pleased to announce the availability of the GA release of the Spring Data release train named &lt;a href="http://en.wikipedia.org/wiki/Edsger_W._Dijkstra"&gt;Dijkstra&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;We're happy to welcome 5 new modules to the release train: &lt;a href="https://github.com/spring-projects/spring-data-elasticsearch"&gt;Elasticsearch&lt;/a&gt;, &lt;a href="http://projects.spring.io/spring-data-cassandra/"&gt;Cassandra&lt;/a&gt;, &lt;a href="http://projects.spring.io/spring-data-couchbase/"&gt;Couchbase&lt;/a&gt;, &lt;a href="http://projects.spring.io/spring-data-gemfire/"&gt;Gemfire&lt;/a&gt; and &lt;a href="http://projects.spring.io/spring-data-redis/"&gt;Redis&lt;/a&gt;. Two of them even celebrate their first GA version ever. So I'd like to send special congratulations and thanks to the project leads &lt;a href="https://twitter.com/mohsin_husen"&gt;Mohsin Husen&lt;/a&gt; for Spring Data Elasticsearch and David Webb as well as &lt;a href="https://twitter.com/matthewadams12"&gt;Matthew Adams&lt;/a&gt; for Spring Data Cassandra.&lt;/p&gt;
+
+&lt;p&gt;Here's the full list of participating modules:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spring Data Commons 1.8 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/1.8.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.8.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.8.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.8.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data JPA 1.6 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-jpa/1.6.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.6.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.6.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.6.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data MongoDB 1.5 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-mongodb/1.5.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.5.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.5.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.5.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Neo4j 3.1 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-neo4j/3.1.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.1.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.1.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.1.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Solr 1.2 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-solr/1.2.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.2.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.2.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.2.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Couchbase 1.1 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/1.1.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.1.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.1.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.1.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Cassandra 1.0 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-cassandra/1.0.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.0.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.0.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.0.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Elasticsearch 1.0 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/1.0.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.0.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.0.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.0.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Gemfire 1.4 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-gemfire/1.4.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.4.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.4.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.4.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Redis 1.3 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-redis/1.3.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.3.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.3.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.3.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data REST 2.1 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-rest-webmvc/2.1.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.1.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.1.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.1.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;The home stretch to GA allowed us to fix &lt;a href="https://jira.spring.io/issues/?filter=14733"&gt;55 tickets&lt;/a&gt; which leaves us with 379 tickets fixed and implemented for Dijkstra overall. Find a curated change log for the release train in &lt;a href="https://github.com/spring-projects/spring-data-commons/wiki/Release-Train-Dijkstra"&gt;our wiki&lt;/a&gt;. This &lt;a href="https://spring.io/blog/2014/05/21/what-s-new-in-spring-data-dijkstra"&gt;blog post&lt;/a&gt; walks you through the most relevant new additions to the release train.&lt;/p&gt;
+
+&lt;p&gt;We're going to drop one or two more services releases for the previous train named Codd and then concentrate on the first milestone of the next train iteration which will be named Evans.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Framework 4.0.5 &amp; 3.2.9 released - next stop: 4.1</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/20/spring-framework-4-0-5-3-2-9-released-next-stop-4-1" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Juergen Hoeller</name>
+    </author>
+    <id>tag:spring.io,2014-05-20:1577</id>
+    <updated>2014-05-20T15:20:21Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
+
+&lt;p&gt;It's my pleasure to announce that Spring Framework 4.0.5 and 3.2.9 have been released. Both of those are designed as a final feature release in the respective line - we will only consider further releases from the 4.0.x and 3.2.x branches in case of serious bugs now.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-framework/"&gt;http://projects.spring.io/spring-framework/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Spring Framework 3.2.9 comes with a repackaged ASM 5.0.2 and is therefore capable of basic Java 8 bytecode processing. However, specific Java 8 feature support - JSR-310 date-time, repeatable annotations, etc - is exclusive to the Spring Framework 4.x line.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://jira.spring.io/browse/SPR/?selectedTab=com.atlassian.jira.jira-projects-plugin:roadmap-panel"&gt;SPR roadmap at jira.spring.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Spring Framework team is busily working towards the 4.1 release now, with a release candidate scheduled for end of June. Note that Spring Framework 4.1 is a rapid follow-up release which will go GA in July, immediately superseding the 4.0.x line.&lt;/p&gt;
+
+&lt;p&gt;Cheers,&lt;/p&gt;
+
+&lt;p&gt;Juergen&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne2GX 2013 Replay: Virtualizing and Tuning Large Scale Java Platforms</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/20/springone2gx-2013-replay-virtualizing-and-tuning-large-scale-java-platforms" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-05-20:1580</id>
+    <updated>2014-05-20T12:39:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2013 in Stana Clara, CA &lt;/p&gt;
+
+&lt;p&gt;Speakers: Emad Benjamin and Guillermo Tantachuco &lt;/p&gt;
+
+&lt;p&gt;The session will cover various GC tuning techniques, in particular focus on tuning large scale JVM deployments. Come to this session to learn about GC tuning recipe that can give you the best configuration for latency sensitive applications. While predominantly most enterprise class Java workloads can fit into a scaled-out set of JVM instances of less than 4GB JVM heap, there are workloads in the in memory database space that require fairly large JVMs. In this session we take a deep dive into the issues and the optimal tuning configurations for tuning large JVMs in the range of 4GB to 128GB. In this session the GC tuning recipe shared is a refinement from 15 years of GC engagements and an adaptation in recent years for tuning some of the largest JVMs in the industry using plain HotSpot and CMS GC policy. You should be able to walk away with the ability to commence a decent GC tuning exercise on your own. The session does summarize the techniques and the necessary JVM options needed to accomplish this task. Naturally when tuning large scale JVM platforms, the underlying hardware tuning cannot be ignored, hence the session will take detour from the traditional GC tuning talks out there and dive into how you optimally size a platform for enhanced memory consumption. Lastly, the session will also cover vfabric reference architecture where a comprehensive performance study was done. Learn more about&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/htxkAMiAD58" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne2GX 2013 Replay: Migrating from WLS, WAS, JBoss to Pivotal tc Server</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/20/springone2gx-2013-replay-migrating-from-wls-was-jboss-to-pivotal-tc-server" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-05-20:1579</id>
+    <updated>2014-05-20T12:32:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2013 in Santa Clara, CA &lt;/p&gt;
+
+&lt;p&gt;Speaker: Zhiyong Li &lt;/p&gt;
+
+&lt;p&gt;SAS® Institute has a large portfolio of Java EE applications. SAS had previously provided support to deploy and run all of these applications in WebLogic, WebSphere and JBoss. Beginning with SAS 9.4, which was released in July 2013, SAS updated its infrastructure and middle tier platform to deliver and run on Pivotal tc Server. In this talk, we will discuss the motivation, technology selection, architecture, system administration, automated installation and configuration, etc., that SAS used to improve value for its customers. Specifically, we will discuss the following areas in detail:     &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Technology selection: To make tc Server viable, we include the messaging, caching and the transaction management system.     &lt;/li&gt;
+  &lt;li&gt;Architecture: To leverage tc Server scalability and reliability in SAS products, we support clustering by using the Pivotal Web Server and the mod_proxy.     Application migration: We provide guidance to our Java developers and configuration developers on how to migrate their applications to the tc Server environment. &lt;/li&gt;
+  &lt;li&gt;Security: We support SSL, single sign-on and other enterprise security protocols such as Integrated Windows Authentication, CA Site Minder, IBM Web Seal, SAML, etc.     &lt;/li&gt;
+  &lt;li&gt;System administration: We provide a single entry point to manage all SAS application stacks including all web applications by leveraging the Hyperic product.  &lt;/li&gt;
+  &lt;li&gt;Automated installation / configuration: We provide the automated process to install and configure Hyperic and all Pivotal Application Fabric products (tc Server, vFWS  and GemFire) and SAS web applications.  &lt;/li&gt;
+  &lt;li&gt;Delivery and support: SAS delivers embedded tc Server as the SAS Web Application Server for use with all our offerings with a midtier on all our supported host platforms. This enables SAS to provide complete supported application architecture with more complete visibility and control of the critical software.  &lt;/li&gt;
+  &lt;li&gt;Cloud deployment: This approach also provides advantages for our customers leveraging virtualization and cloud deployment strategies.&lt;/li&gt;
+&lt;/ul&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/qfV4Bl80dJo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>Demo: Zero to Stream processing in 7 minutes with Spring XD</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/19/demo-zero-to-stream-processing-in-7-minutes-with-spring-xd" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-05-19:1576</id>
+    <updated>2014-05-19T12:32:00Z</updated>
+    <content type="html">&lt;p&gt;Speaker: Pieter Humphrey&lt;/p&gt;
+
+&lt;p&gt;Creating a stream of live twitter data for an analytics dashboard using Spring XD, a JavaScript D3 component / Spring XD's REST API. &lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;a href="https://github.com/spring-projects/spring-xd-samples/tree/master/analytics-dashboard"&gt;https://github.com/spring-projects/spring-xd-samples/tree/master/analytics-dashboard&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;Learn more about Spring XD: &lt;a href="http://projects.spring.io/spring-xd"&gt;http://projects.spring.io/spring-xd&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;Learn more about Spring for Apache Hadoop: &lt;a href="http://projects.spring.io/spring-hadoop"&gt;http://projects.spring.io/spring-hadoop&lt;/a&gt; &lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/nOfzrQ6CdKI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>Webinar Replay: Spring Integration 4.0 - The New Frontier</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/15/webinar-replay-spring-integration-4-0-the-new-frontier" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-05-15:1575</id>
+    <updated>2014-05-15T08:48:00Z</updated>
+    <content type="html">&lt;p&gt;Speaker: Gary Russell&lt;/p&gt;
+
+&lt;p&gt; The Spring Integration team has been hard at work on the latest release of the popular integration framework. Before version 4.0, it was impractical to define a complete Spring Integration flow without using XML. With this major release, the existing basic annotation support has received an overhaul and those who prefer to use java @Configuration classes can now define their applications without needing to use any XML (of course, XML is still supported as well). In this session we will cover these major changes to the framework, explaining how and when to use them. It will be mainly demonstration and code walk through, and we will build a useful Spring Boot / Integration application from scratch.&lt;/p&gt;
+
+&lt;p&gt;Learn more about Spring Integration at &lt;a href="http://projects.spring.io/spring-integration"&gt;http://projects.spring.io/spring-integration&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Learn more about Spring Boot at &lt;a href="http://projects.spring.io/spring-boot"&gt;http://projects.spring.io/spring-boot&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Learn more about Spring Framework at &lt;a href="http://projects.spring.io/spring-framework"&gt;http://projects.spring.io/spring-framework&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/g3DgdSqEgzI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Boot 1.1.0.M1 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/14/spring-boot-1-1-0-m1-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Phil Webb</name>
+    </author>
+    <id>tag:spring.io,2014-05-14:1574</id>
+    <updated>2014-05-14T08:25:16Z</updated>
+    <content type="html">&lt;p&gt;The first milestone release for Spring Boot 1.1.0 is available now in the Spring &lt;a href="http://repo.spring.io/milestone/"&gt;milestone repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Highlights include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Additional templating support.&lt;/li&gt;
+&lt;li&gt;Improved metrics and health endpoints.&lt;/li&gt;
+&lt;li&gt;Additional data integrations (including improved MongoDB support and support for GemFire).&lt;/li&gt;
+&lt;li&gt;A host of minor improvements and additions.&lt;/li&gt;
+&lt;li&gt;Updated dependencies for many third-party libraries.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;See the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.1-Release-Notes#new-and-noteworthy"&gt;release notes&lt;/a&gt; for a complete list of new and noteworthy features.&lt;/p&gt;
+
+&lt;p&gt;We'd appreciate any feedback from existing Spring Boot 1.0 users. If you are upgrading, be sure to follow the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.1-Release-Notes"&gt;instructions from the release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Spring Boot 1.1 is due to be released towards the end of May.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/1.1.0.M1/reference/htmlsingle/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring  - May 13th, 2014</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/13/this-week-in-spring-may-13th-2014" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2014-05-13:1567</id>
+    <updated>2014-05-13T21:17:00Z</updated>
+    <content type="html">&lt;p&gt;Welcome back to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I'm in &lt;a href="http://2014.geecon.org/"&gt;Krakow, Poland for Geecon&lt;/a&gt;, the Polish developer conference where, of course, I'll be speaking to developers about Spring. (and, maybe, Spring). If you're around, find me, I'll be wearing the giant Spring leaf t-shirt! :) &lt;/p&gt;
+
+&lt;p&gt;Other than that, there's a lot to get through so let's get to it! &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;In preparation for the upcoming Spring IO Platform, Spring Data release train Dijkstra has been released!  This is a tremendous release train that includes: JPA, MongoDB, Neo4J, Apache Solr, Couchbase, Cassandra, Elasticsearch, Gemfire, Redis and Data REST!  Congrats to the &lt;a href="https://www.twitter.com/springdata"&gt;Spring Data Team&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;
+&lt;a href="http://spring.io/blog/2014/05/14/spring-boot-1-1-0-m1-available-now"&gt;Spring Boot 1.1.0 M1&lt;/a&gt; is now available and introduces MongoDB and Gemfire support, as well as improved actuator metrics and health endpoints.&lt;/li&gt;
+  &lt;li&gt;Final maintenance releases for the Spring Framework 3.2.x and 4.0.x versions are &lt;a href="http://spring.io/blog/2014/05/20/spring-framework-4-0-5-3-2-9-released-next-stop-4-1"&gt;now available&lt;/a&gt;! &lt;/li&gt;
+  
+  &lt;li&gt;Spring Integration ninja (rockstar!) Artem Bilan   put together a nice post introducing all the amazing Java configuration support &lt;a href="http://spring.io/blog/2014/05/08/spring-integration-java-dsl-milestone-1-released"&gt;in the nascent Spring Integration Java configuration DSL&lt;/a&gt;, which builds upon the basic &lt;code&gt;@EnableIntegration&lt;/code&gt; support available in the just-released Spring Integration 4.0. You should read that post. Seriously.  I want to steal some of Artem's thunder by excerpting this one amazing code-snippet:
+    &lt;p&gt;&lt;code&gt;java
+      @Bean IntegrationFlow helloWorldFlow() {
+      return IntegrationFlows.from("helloWorldInput")
+      .filter("World"::equals)
+      .transform("Hello "::concat)
+      .handle(System.out::println)
+      .get();
+      } &lt;/code&gt; Yep! That's a Spring Integration flow that handles input messages, &lt;code&gt;filter&lt;/code&gt;s them, &lt;code&gt;transform&lt;/code&gt;s them, and then gives them to the escape-hatch method, &lt;code&gt;handle&lt;/code&gt;, which lets the developer insert any behavior into the mix. Remember, you can change anything about this - including where it gets the messages from and where it writes the messages to. Indeed, the output of one flow could be the input to another.  Congratulations, Spring Integration team! Also, make sure to &lt;a href="http://spring.io/blog/2014/05/15/webinar-replay-spring-integration-4-0-the-new-frontier"&gt;check out the launch webinar replay&lt;/a&gt;!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I know I mentioned this last week, but it's &lt;em&gt;so&lt;/em&gt; worth a re-read! &lt;a href="http://spring.io/blog/2014/05/07/groovy-2-3-released"&gt;Groovy 2.3.0 is here&lt;/a&gt;! (Hah! Gotcha! This week's link was to a different post by the same author on the subject of the Groovy 2.3.0 release! But aren't you glad you read it, anyway?) Go, Groovy, go!&lt;/li&gt;
+  &lt;li&gt;My pal Pieter Humphrey has done a nice &lt;a href="http://spring.io/blog/2014/05/19/demo-zero-to-stream-processing-in-7-minutes-with-spring-xd"&gt;introductory screencast on Spring XD&lt;/a&gt; - showing how to get up and running doing stream processing, and wiring it to an analytics dashboard in less than 7 minutes.  XD uses a deceptively simple DSL (domain specific language) and no Java code - it's never been easier to work with Hadoop.&lt;/li&gt;
+  &lt;li&gt;Spring Security lead Rob Winch has been moving heaven and earth &lt;a href="http://spring.io/blog/2014/05/07/preview-spring-security-test-method-security"&gt;to make unit-testing secure applications easier than ever&lt;/a&gt;.  In this first installment of a new series, Rob looks at new annotations designed to stand in place of a live-fire Spring Security apparatus to &lt;em&gt;mock&lt;/em&gt; a &lt;code&gt;Principal&lt;/code&gt;, a &lt;code&gt;UserDetailsService&lt;/code&gt;, and more. Check it out and stay tuned for more!&lt;/li&gt;
+&lt;li&gt;Speaking of Rob Winch, he gave an epic &lt;a href="http://spring.io/blog/2014/05/12/springone2gx-2013-replay-getting-started-with-spring-security-3-2"&gt;introduction to Spring Security at SpringOne2GX 2013 last year&lt;/a&gt;. This is a perfect place to jump onboard if you're new to Spring Security.&lt;/li&gt;
+&lt;li&gt;New Relic's Ashley Puls was kind enough to do a webinar with your humble author on &lt;a href="http://spring.io/blog/2014/05/08/webinar-replay-web-application-diagnostics-with-java-and-javascript"&gt;Web Application Diagnostics using New Relic&lt;/a&gt;. Thanks, Ashley! I'll be very honest, this webinar was &lt;em&gt;super&lt;/em&gt; informative for me.   I knew just a little about New Relic, and in working through the development of the webinar I learned about a zillion and five use cases that are well served by New Relic. Really cool stuff!  &lt;/li&gt;
+&lt;li&gt;Also published this week - a SpringOne2GX 2013 Replay by Emad Benjamin and Guillermo Tantucho: &lt;a href="http://spring.io/blog/2014/05/20/springone2gx-2013-replay-virtualizing-and-tuning-large-scale-java-platforms"&gt;Virtualizing and Tuning Large Scale Java Platforms&lt;/a&gt;. This goes over JVM memory tuning and all the tricks and tips for getting Java to run well on a virtualized environment.&lt;/li&gt;
+&lt;li&gt;SpringOne2GX 2013 replay - a great talk from SAS Software: &lt;a href="http://spring.io/blog/2014/05/20/springone2gx-2013-replay-migrating-from-wls-was-jboss-to-pivotal-tc-server"&gt;Migrating from WebLogic, WebSphere, JBoss to Pivotal tcServer&lt;/a&gt;. This might go well with a recent post on &lt;a href="http://bit.ly/1sJaNMr"&gt;why App Servers are dead&lt;/a&gt; by Eberhard Wolff. &lt;/li&gt;
+&lt;li&gt;Do you &lt;em&gt;love&lt;/em&gt; Spring's new home on the web, &lt;a href="http://spring.io/blog/2014/05/12/springone2gx-2013-replay-spring-io-inside-and-out"&gt;spring.io&lt;/a&gt;, as much as I do? Want to learn more? Check out this talk by project lead and Spring ninja Chris Beams  on the makeup of the site, its development, and deployment. &lt;/li&gt;
+&lt;li&gt;Last week, Spring Data Neo4j lead and graph-ninja Michael Hunger and I gave a talk on Spring Boot and Neo4j. This talk was fun for me because it gave me a lot of excuses to play with Neo4j. In point of fact, Michael and I are doing a webinar on about the same subject on the 20th of May (that's 7 days away!), so come see what we've come up with. In the meantime, you may want to &lt;a href="http://java.dzone.com/articles/neo4j-cypher-creating-time"&gt;check out this recent post&lt;/a&gt; on creating a time-tree with Cypher, the language that Michael works on that's used to drive interactions with Neo4j.  That post was, of course, a response to &lt;em&gt;another&lt;/em&gt; post that Michael put together on &lt;a href="http://java.dzone.com/articles/importing-forests-neo4j"&gt;&lt;em&gt;importing forests into Neo4j&lt;/em&gt;&lt;/a&gt;, also worth a read!&lt;/li&gt;
+&lt;li&gt;I quite liked this post introducing &lt;a href="http://vasya10.wordpress.com/2014/05/03/the-groovyspringbootbatchgormgroovydslbeanfactory/"&gt;how to setup a Spring Batch job using Spring Boot&lt;/a&gt;. The author found a comfortable configuration-middle ground in the Groovy &lt;code&gt;BeanBuilder&lt;/code&gt; support, and  describes it nicely in this post    &lt;/li&gt;
+&lt;li&gt;Moritz Schulze  has put together a very nice post, following others in the series, &lt;a href="http://blog.techdev.de/testing-a-secured-spring-data-rest-service-with-java-8-and-mockmvc/"&gt;on how to integration test REST services&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Are you using Spring Boot and want to use Spock? Netflix engineer &lt;a href="http://github.com/tomaslin/gs-spring-boot-spock"&gt;Tomas Lin has put together an example on his GitHug page&lt;/a&gt;. Check it out!&lt;/li&gt;
+&lt;li&gt;Jakub Kubrynski has put together a nice post on how to use Spring Boot's  &lt;code&gt;org.springframework.boot.actuate.system.ApplicationPidListener&lt;/code&gt; (which Jakub contributed - thanks Jakub!) - to work with the &lt;a href="http://java.dzone.com/articles/managing-spring-boot"&gt;application's process identifier (&lt;code&gt;PID&lt;/code&gt;)&lt;/a&gt;. Nice!&lt;/li&gt;
+&lt;li&gt;Meltdown 1.0.0 has been released! Meltdown is a &lt;a href="http://blog.clojurewerkz.org/blog/2014/04/29/meltdown-1-dot-0-0-is-released/"&gt;Clojure interface to the Reactor project&lt;/a&gt;. So... functional programming and stream processing inside a lisp-like language? A dream! Check it out!&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Batch 3.0.0.RC1 is now available</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/13/spring-batch-3-0-0-rc1-is-now-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Michael Minella</name>
+    </author>
+    <id>tag:spring.io,2014-05-13:1573</id>
+    <updated>2014-05-13T21:07:08Z</updated>
+    <content type="html">&lt;p&gt;Today we are pleased to announce the release candidate for Spring Batch 3.0.  This release of Spring Batch provides the support for JSR-352 we are committed to providing as well as a number of new features for our existing Spring Batch community.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-features-in-release-candidate-1" class="anchor" href="#features-in-release-candidate-1"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Features in Release Candidate 1&lt;/h2&gt;
+
+&lt;p&gt;The major features for this release include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JSR-352 support&lt;/li&gt;
+&lt;li&gt;Promotion of Spring Batch Integration into Spring Batch&lt;/li&gt;
+&lt;li&gt;Complete overhaul of dependencies&lt;/li&gt;
+&lt;li&gt;Support for SQLite&lt;/li&gt;
+&lt;li&gt;Job scope&lt;/li&gt;
+&lt;li&gt;Switch from Maven to Gradle for building Spring Batch&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;
+&lt;a name="user-content-jsr-352-support" class="anchor" href="#jsr-352-support"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;JSR-352 Support&lt;/h2&gt;
+
+&lt;p&gt;JSR-352 is the batch JSR and was released as 1.0 late last year.  As Spring Batch served as the inspiration for much of the programming model of this JSR, Spring is committed to supporting it.  With the 3.0 release, Spring Batch is compliant with JSR-352 passing all TCK tests.  It provides the most production-tested implementation of the JSR.&lt;/p&gt;
+
+&lt;p&gt;Creating batch jobs that comply with the standards of this JSR should feel very familiar to users of Spring Batch.  The XML configuration and interfaces are very similar to the existing Spring Batch.  Below is an example JSR-352 batch job&lt;/p&gt;
+
+&lt;div class="highlight highlight-xml"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?xml version="1.0" encoding="UTF-8"?&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;job&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"myJob"&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;"http://xmlns.jcp.org/xml/ns/javaee"&lt;/span&gt; &lt;span class="na"&gt;version=&lt;/span&gt;&lt;span class="s"&gt;"1.0"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;step&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"step1"&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;batchlet&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"testBatchlet"&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/step&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/job&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Spring Batch's implementation of JSR-352 was developed to allow the most flexibility for existing Spring Batch users.  We allow developers to use existing ItemReader, ItemProcessor, ItemWriters, etc in conjunction with the configuration facilities that JSR-352 provides.  This provides developers a complete library of production-tested components for building robust batch jobs.&lt;/p&gt;
+
+&lt;p&gt;To read more about Spring Batch's implementation of JSR-352, visit our reference documentation here: &lt;a href="http://docs.spring.io/spring-batch/trunk/reference/html/jsr-352.html"&gt;http://docs.spring.io/spring-batch/trunk/reference/html/jsr-352.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-promote-spring-batch-integration-to-spring-batch" class="anchor" href="#promote-spring-batch-integration-to-spring-batch"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Promote Spring Batch Integration to Spring Batch&lt;/h2&gt;
+
+&lt;p&gt;The line between when to use Spring Batch or Spring Integration is often a blurry one.  There are many use cases where one works better than the other.  However, there are also many use cases where they can be used together to build robust and scalable data processing systems.  Spring Batch Integration provides a collection of components to use Spring Batch and Spring Integration together.  Use cases that Spring Batch Integration provide for include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Asynchronous item processing&lt;/li&gt;
+  &lt;li&gt;Remote chunking&lt;/li&gt;
+  &lt;li&gt;Launching batch jobs via messages&lt;/li&gt;
+  &lt;li&gt;Remote partitioning&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;These capabilities take batch processing beyond what JSR-352 provides and allows users to develop batch applications that scale beyond a single JVM.  You can read more about Spring Batch Integration and it's components in the reference documentation here: &lt;a href="http://docs.spring.io/spring-batch/trunk/reference/html/springBatchIntegration.html"&gt;http://docs.spring.io/spring-batch/trunk/reference/html/springBatchIntegration.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-complete-overhaul-of-dependencies" class="anchor" href="#complete-overhaul-of-dependencies"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Complete overhaul of dependencies&lt;/h2&gt;
+
+&lt;p&gt;We took this opportunity to review all third party dependencies for Spring Batch and bring them up to date.  As part of this exercise, we also brought them in alignment with the other projects in the Spring portfolio to allow for the easiest experience in adding Spring Batch to an existing application (or adding other projects to a Spring Batch project).&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-support-for-sqlite" class="anchor" href="#support-for-sqlite"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Support for SQLite&lt;/h2&gt;
+
+&lt;p&gt;While HSQLDB is useful for many testing scenarios, a file based system like SQLite can also be very useful.  With the 3.0 release we have added the job repository DDL for SQLite to address these use cases.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-job-scope" class="anchor" href="#job-scope"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Job scope&lt;/h2&gt;
+
+&lt;p&gt;Spring Batch's step scope allows developers to delay the creation of objects until a particular step is executed.  This functionality has also exposed the ability to provide late binding of properties in batch artifacts.  With this 3.0 release, Spring Batch introduces a Job scope.  This scope works in the same way as the step scope (delays the creation of objects via proxies), however it delays the creation until the job executes instead of the step.  This can be helpful when defining multiple jobs in a context or when heavy weight initialization processes occur in step level components.  You can read more about the job scope in the reference manual here: &lt;a href="http://docs.spring.io/spring-batch/trunk/reference/html/configureStep.html#job-scope"&gt;http://docs.spring.io/spring-batch/trunk/reference/html/configureStep.html#job-scope&lt;/a&gt;.
+&lt;/p&gt;&lt;h2&gt;
+&lt;a name="user-content-move-from-maven-to-gradle" class="anchor" href="#move-from-maven-to-gradle"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Move from Maven to Gradle&lt;/h2&gt;
+&lt;p&gt;Finally, this release is the first for Spring Batch to move from Maven to Gradle for an internal build system. This change will have zero effect on developers consuming the jars.  They will still be available via Maven Central for maven users.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-conclusion" class="anchor" href="#conclusion"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;3.0.0.RC1 represents the completion of the next major milestone for Spring Batch.  It brings the standards that JSR-352 provides to our community as well as providing an exhaustive collection of additional features for the advanced user.  We look forward to your feedback in the forums, social media, and in person at &lt;a href="http://springone2gx.com/register"&gt;SpringOne2GX&lt;/a&gt;!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne2GX 2013 Replay:  spring.io inside and out</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/12/springone2gx-2013-replay-spring-io-inside-and-out" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-05-13:1565</id>
+    <updated>2014-05-12T18:01:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2013 in Santa Clara, CA.&lt;/p&gt;
+
+&lt;p&gt; Join Chris Beams as he dives into &lt;a href="http://spring.io"&gt;http://spring.io&lt;/a&gt; - the new spring website. It's chock full of amazing new resources that you can share with your co-workers who might be new to Spring, or simply helping to introduce Spring to those who might not be familiar with it - people coding in other languages, frameworks, or platforms. You've asked us to help make it easier to win the comparisons, and we've listened. Attend this session to get the ammo you need to win that internal bake off, and learn the details about how the site was built and deployed. now and open source project!&lt;/p&gt;
+
+&lt;p&gt;Learn more about the open source spring.io website at our blog: &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://spring.io/blog/2014/03/27/project-sagan-open-sourcing-spring-io"&gt;http://spring.io/blog/2014/03/27/project-sagan-open-sourcing-spring-io&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://spring.io/blog/2014/04/04/project-sagan-zero-downtime-deployments"&gt;http://spring.io/blog/2014/04/04/project-sagan-zero-downtime-deployments&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://spring.io/blog/2014/04/28/project-sagan-client-side-architecture"&gt;http://spring.io/blog/2014/04/28/project-sagan-client-side-architecture&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://spring.io/blog/2014/04/18/project-sagan-upgrading-to-jdk-8"&gt;http://spring.io/blog/2014/04/18/project-sagan-upgrading-to-jdk-8&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Learn more about Spring Framework 4.0 &lt;a href="http://projects.spring.io/spring-framework"&gt;http://projects.spring.io/spring-framework&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Learn more about Spring Boot &lt;a href="http://projects.spring.io/spring-boot"&gt;http://projects.spring.io/spring-boot&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Learn more about using CloudFoundry at: &lt;a href="http://cloudfoundry.org/"&gt;http://cloudfoundry.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/pA1oGmd1R5w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne2GX 2013 Replay: Getting Started with Spring Security 3.2</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/12/springone2gx-2013-replay-getting-started-with-spring-security-3-2" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-05-13:1564</id>
+    <updated>2014-05-12T18:01:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2013 in Santa Clara, CA.&lt;/p&gt;
+
+&lt;p&gt; Speaker: Rob Winch Spring Security is a framework that focuses on providing both authentication and authorization to Java applications. Like all Spring projects, the real power of Spring  Security is found in how easily it can be extended to meet custom requirements. In this presentation Rob will incrementally apply the new features found in Spring Security 3.2 to an existing application to demonstrate how it can meet your authentication and authorization needs. &lt;/p&gt;
+
+&lt;p&gt;Learn more about Spring Security 3.2 at &lt;a href="http://projects.spring.io/spring-security/"&gt;http://projects.spring.io/spring-security/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Learn more about using Spring at: &lt;a href="http://www.spring.io"&gt;http://www.spring.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/1zu8COg80q4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Integration Java DSL Milestone 1 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/08/spring-integration-java-dsl-milestone-1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Artem Bilan</name>
+    </author>
+    <id>tag:spring.io,2014-05-08:1561</id>
+    <updated>2014-05-08T16:38:00Z</updated>
+    <content type="html">&lt;p&gt;The Spring Integration development team is pleased to announce the release of the &lt;strong&gt;First Milestone of the Java DSL extension
+for &lt;a href="http://projects.spring.io/spring-integration"&gt;Spring Integration&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;The general purpose of the Java DSL is to provide a fluent and convenient API for &lt;em&gt;Message Flows&lt;/em&gt; based on
+&lt;a href="http://www.eaipatterns.com"&gt;EIP&lt;/a&gt; and avoid boilerplate Spring Integration configuration.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;org.springframework.integration:spring-integration-java-dsl:1.0.0.M1&lt;/code&gt; artifact is available from the
+&lt;a href="http://repo.spring.io/libs-milestone"&gt;Spring IO Milestone Repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can find in more information in the &lt;a href="https://github.com/spring-projects/spring-integration-extensions/wiki/Spring-Integration-Java-DSL-Reference"&gt;Reference Manual&lt;/a&gt;
+and from &lt;a href="https://github.com/spring-projects/spring-integration-extensions/tree/master/spring-integration-java-dsl"&gt;source code&lt;/a&gt;,
+however let us shed some light on the main features.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Concept&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The Spring Integration Java DSL is not similar to existing &lt;a href="https://github.com/spring-projects/spring-integration-dsl-scala"&gt;Scala&lt;/a&gt;
+and &lt;a href="https://github.com/spring-projects/spring-integration-dsl-groovy"&gt;Groovy&lt;/a&gt; DSls; nor is it similar to the
+&lt;a href="https://camel.apache.org/java-dsl.html"&gt;Apache Camel Java DSL&lt;/a&gt;, although it does implement the &lt;em&gt;method-chain&lt;/em&gt; principle.&lt;/p&gt;
+
+&lt;p&gt;Our main goal is to reuse existing practices from the Spring Framework JavaConfig (&lt;code&gt;@Configuration&lt;/code&gt; classes), as well from Spring Integration Core
+components. To achieve the &lt;em&gt;method-chain&lt;/em&gt; principle, we provide a set of &lt;em&gt;builders&lt;/em&gt; and their &lt;em&gt;factories&lt;/em&gt;.
+Also Java 8 &lt;em&gt;Lambdas&lt;/em&gt; provide some additional assistance for clean syntax.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Basics&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The central class is &lt;code&gt;IntegrationFlows&lt;/code&gt; - the &lt;code&gt;IntegrationFlowBuilder&lt;/code&gt; factory, - which should be used from a &lt;code&gt;@Bean&lt;/code&gt; definition method to populate the &lt;code&gt;IntegrationFlow&lt;/code&gt; bean using &lt;em&gt;method-chain*s and *Lambdas&lt;/em&gt; as parameters. The &lt;code&gt;IntegrationFlowBuilder&lt;/code&gt; provides a lot of
+overloaded methods to configure Integration Endpoints. We call them &lt;strong&gt;EIP-methods&lt;/strong&gt;. The canonical sample:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Bean&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;IntegrationFlow&lt;/span&gt; &lt;span class="nf"&gt;helloWorldFlow&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;IntegrationFlows&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;from&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"helloWorldInput"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"World"&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;equals&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Hello "&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;concat&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;handle&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;out&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;println&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Using Spring Integration terms the description for the sample above is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A &lt;code&gt;Message&lt;/code&gt; is sent to the "helloWorldInput" channel;&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;filter&lt;/code&gt; accepts it only if its &lt;code&gt;payload&lt;/code&gt; is the String "World";&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;transformer&lt;/code&gt; prefixes the &lt;code&gt;payload&lt;/code&gt; with &lt;code&gt;Hello&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;handler&lt;/code&gt; prints the result to the STDOUT;&lt;/li&gt;
+&lt;li&gt;if the original &lt;code&gt;payload&lt;/code&gt; isn't "World", we won't see anything in the console - the &lt;code&gt;Message&lt;/code&gt; is discarded by
+&lt;code&gt;filter&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;The Spring Integration Java DSL can be used in existing applications as is, and can be wired with exising
+Messaging Annotations configuration or Spring Integration XML configuration, and, of course, in Spring Boot applications.&lt;/p&gt;
+
+&lt;p&gt;Plesae refer to the Reference Manual mentioned above for more information.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wrapping up&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is just the beginning and we are working on an appropriate solution to configure protocol-specific adapters
+using similar fluent API and Lambdas. Please don't hesitate to share your thoughts and feedback:
+&lt;a href="http://forum.spring.io/forum/spring-projects/integration"&gt;Spring Forum&lt;/a&gt;,
+&lt;a href="http://stackoverflow.com"&gt;StackOverflow&lt;/a&gt; (&lt;code&gt;spring-integration&lt;/code&gt; tag), &lt;a href="https://jira.spring.io/browse/INT"&gt;Spring JIRA&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Webinar: Spring Integration 4.0&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Don't miss the &lt;a href="https://spring.io/blog/2014/04/22/webinar-spring-integration-4-0-the-new-frontier"&gt;Webinar&lt;/a&gt;
+with &lt;a href="https://spring.io/team/grussell"&gt;Gary Russell&lt;/a&gt; demonstrating new features from
+&lt;a href="http://docs.spring.io/spring-integration/docs/4.0.0.RELEASE/reference/html/whats-new.html"&gt;Spring Integration 4.0&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SpringOne 2GX 2014 is around the corner&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Book your place at &lt;a href="http://www.springone2gx.com/"&gt;SpringOne in Dallas, TX&lt;/a&gt; for Sept 8-11 soon.
+It's simply the best opportunity to find out first
+hand all that's going on and to provide direct feedback.
+Expect a number of significant new announcements this year.
+We are anticipating that several in-depth Spring-Integration sessions will be presented.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Webinar Replay: Web Application diagnostics with Java and JavaScript</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/08/webinar-replay-web-application-diagnostics-with-java-and-javascript" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-05-08:1563</id>
+    <updated>2014-05-08T13:22:00Z</updated>
+    <content type="html">&lt;p&gt;Speakers:  Ashley Puls, New Relic  Josh Long, Pivotal &lt;/p&gt;
+
+&lt;p&gt;There is more and more usage of JavaScript on the client side today. Many are starting down the difficult path of full blown application development in JS on the client side, going beyond having a simple rollover menu logic or presentation component. But tracking and tracing effectively means looking at the whole application, not just the front end. New Relic can be used either in development or production to diagnose hybrid JavaScript/Java applications.  In this session, Josh Long (Pivotal) and Ashley Puls (New Relic) will show how you can track and trace your way through today's hybrid JavaScript+Java web apps - resolving slow page loads, blocked threads, slow queries, etc.&lt;/p&gt;
+
+&lt;p&gt;Learn more about using New Relic at: &lt;a href="http://www.newrelic.com"&gt;http://www.newrelic.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Learn more about using Spring at: &lt;a href="http://www.spring.io"&gt;http://www.spring.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/ixnlDL6wli4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>Groovy 2.3 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/05/07/groovy-2-3-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Guillaume Laforge</name>
+    </author>
+    <id>tag:spring.io,2014-04-25:1543</id>
+    <updated>2014-05-07T17:04:00Z</updated>
+    <content type="html">&lt;p&gt;The Groovy development team is pleased to announce the &lt;strong&gt;release of Groovy 2.3.0&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;Groovy 2.3 is the new major release of the Groovy programming language for the JVM, featuring:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;official &lt;strong&gt;support for running Groovy on JDK 8&lt;/strong&gt;
+&lt;/li&gt;
+&lt;li&gt;a new &lt;a href="http://beta.groovy-lang.org/docs/groovy-2.3.0/html/documentation/core-traits.html"&gt;trait&lt;/a&gt; keyword to define new units of code for composing behaviors&lt;/li&gt;
+&lt;li&gt;new and improved compile-time code transformations like:
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;@TailRecursive&lt;/strong&gt;: for transforming methods with tail recursion to avoid blowing the stack, &lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://beta.groovy-lang.org/docs/groovy-2.3.0/html/documentation/core-metaprogramming.html#xform-Builder"&gt;@Builder&lt;/a&gt;: to easily implement fluent builders, generated by the Groovy compiler itself&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://beta.groovy-lang.org/docs/groovy-2.3.0/html/documentation/core-metaprogramming.html#xform-Sortable"&gt;@Sortable&lt;/a&gt;: to transform a class to implement Comparable using the various properties of the class&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;a new &lt;strong&gt;NIO2 module&lt;/strong&gt; with Path support&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;lightening fast JSON&lt;/strong&gt; parsing and building as covered in the &lt;a href="http://www.infoq.com/news/2014/04/groovy-2.3-json"&gt;recent article on InfoQ&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;closure parameter type inference&lt;/strong&gt;, to infer the type of parameters in closures when using the static type checker and static compiler&lt;/li&gt;
+&lt;li&gt;a &lt;a href="http://beta.groovy-lang.org/docs/groovy-2.3.0/html/documentation/template-engines.html#_the_markuptemplateengine"&gt;markup template engine&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Groovysh and GroovyConsole ease of use improvements&lt;/li&gt;
+&lt;li&gt;a new &lt;a href="http://beta.groovy-lang.org/docs/groovy-2.3.0/html/documentation/core-testing-guide.html#_junit_4"&gt;GroovyAssert&lt;/a&gt; test utility&lt;/li&gt;
+&lt;li&gt;more @BaseScript class capabilities, and more.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;If you want to learn more about the new features of Groovy 2.3, please reader the &lt;a href="http://bit.ly/g230notes"&gt;detailed release notes&lt;/a&gt;, and if you want to get some regular fresh news of the Groovy ecosystem, you can &lt;a href="http://bit.ly/groovy-weekly-subscribe"&gt;subscribe to the Groovy Weekly newsletter&lt;/a&gt;, delivering fresh news every Tuesday.&lt;/p&gt;
+
+&lt;p&gt;For more information about the issues closed, you can have a look at our &lt;a href="http://bit.ly/g230jira"&gt;changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In addition to the Groovy library in &lt;a href="https://bintray.com/groovyhttps://bintray.com/groovy"&gt;Bintray JCenter&lt;/a&gt; and &lt;a href="http://search.maven.org/#artifactdetails%7Corg.codehaus.groovy%7Cgroovy-all%7C2.3.0%7Cjar"&gt;Maven Central&lt;/a&gt;, you can download also &lt;a href="http://groovy.codehaus.org/Download"&gt;download a binary distribution of Groovy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SpringOne 2GX 2014 is around the corner&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Also, if you want to dive in depth into all the goodness provided by this new version of Groovy, I invite you to join us at the SpringOne 2GX conference!&lt;/p&gt;
+
+&lt;p&gt;Book your place at SpringOne 2GX in Dallas, TX for Sept 8-11 soon. It's simply the best opportunity to find out first hand all that's going on and to provide direct feedback. Expect a number of significant new announcements this year. We are anticipating that several in-depth Spring-Integration sessions will be presented.&lt;/p&gt;</content>
+  </entry>
+</feed>
+

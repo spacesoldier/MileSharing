@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_user"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_gravity="center" android:orientation="vertical"  >
+	
+    <LinearLayout 
+    	android:id="@+id/new_user_call"
+    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+    	android:layout_gravity="right" android:orientation="horizontal">"
+
+        <TextView
+        android:id="@+id/lbl_your_question" android:text="First time? Please, " 
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        
+        <Button
+	        android:id="@+id/newUserCall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:text="@string/new_user_call"
+ 		/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+    	android:id="@+id/new_user_data"
+    	android:layout_width="match_parent" android:layout_height="wrap_content"
+    	android:layout_gravity="center" android:orientation="vertical">
+
+        <TextView
+	        android:id="@+id/lbl_first_name" android:text="@string/firstname" 
+	        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+      
+	    <EditText
+	        android:id="@+id/txt_first_name"
+	        android:layout_width="match_parent"  android:layout_height="wrap_content" 
+	        android:inputType="text"
+	     />
+	    
+	    <TextView
+	        android:id="@+id/lbl_last_name" android:text="@string/lastname" 
+	        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	      
+	    <EditText
+	        android:id="@+id/txt_last_name"
+	        android:layout_width="match_parent"  android:layout_height="wrap_content" 
+	        android:inputType="text"
+	    />
+	    
+	    <TextView
+	        android:id="@+id/lbl_email" android:text="@string/email" 
+	        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	      
+	    <EditText
+	        android:id="@+id/txt_email"
+	        android:layout_width="match_parent"  android:layout_height="wrap_content" 
+	        android:inputType="text"
+	    />
+        
+    </LinearLayout>
+    
+    
+    <TextView
+        android:id="@+id/lbl_your_login" android:text="@string/login" 
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+      
+    <EditText
+        android:id="@+id/txt_your_login"
+        android:layout_width="match_parent"  android:layout_height="wrap_content" 
+        android:inputType="text"
+    />
+    
+    <TextView
+        android:id="@+id/lbl_your_pass" android:text="@string/password" 
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+      
+    <EditText
+        android:id="@+id/txt_your_pass"
+        android:layout_width="match_parent"  android:layout_height="wrap_content" 
+        android:inputType="textPassword"
+        android:imeOptions="actionDone" />
+    <TextView
+        android:id="@+id/lbl_login_error" android:text="@string/login_error" 
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    
+</LinearLayout>
