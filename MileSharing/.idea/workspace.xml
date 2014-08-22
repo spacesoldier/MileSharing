@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9eeab51e-d001-42db-b6b6-345ec6bfaae2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v7_appcompat.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_play_services.xml" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\MileSharing\gen\android\support\v7\appcompat\R.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\MileSharing\gen\com\google\android\gms\R.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\.project" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\.settings\org.eclipse.jdt.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\R.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\classes\android\UnusedStub.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\classes\com\google\android\gms\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\classes\com\google\android\gms\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\classes\com\google\android\gms\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\classes\com\google\android\gms\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\classes\com\google\android\gms\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\classes\com\google\android\gms\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\classes\com\google\android\gms\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\classes\com\google\android\gms\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\classes\com\google\android\gms\R.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\google-play-services_lib.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\jarlist.cache" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_icon_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_icon_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_icon_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_icon_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_icon_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_icon_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_text_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_text_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_text_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_text_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_text_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_text_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_text_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\common_signin_btn_text_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-hdpi\ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_icon_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_icon_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_icon_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_icon_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_icon_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_icon_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_text_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_text_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_text_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_text_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_text_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_text_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_text_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\common_signin_btn_text_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-mdpi\ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_icon_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_icon_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_icon_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_icon_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_icon_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_icon_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_text_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_text_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_text_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_text_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_text_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_text_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_text_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\common_signin_btn_text_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xhdpi\ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_icon_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_icon_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_icon_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_icon_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_icon_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_icon_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_text_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_text_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_text_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_text_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_text_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_text_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_text_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\common_signin_btn_text_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\bin\res\crunch\drawable-xxhdpi\ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-af\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-am\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-ar\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-be\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-bg\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-ca\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-cs\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-da\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-de\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-el\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-en-rGB\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-en-rIN\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-es-rUS\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-es\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-et-rEE\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-fa\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-fi\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-fr-rCA\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-fr\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-hi\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-hr\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-hu\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-hy-rAM\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-in\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-it\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-iw\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-ja\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-ka-rGE\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-km-rKH\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-ko\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-lo-rLA\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-lt\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-lv\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-mn-rMN\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-ms-rMY\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-nb\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-nl\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-pl\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-pt-rBR\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-pt-rPT\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-pt\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-ro\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-ru\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-sk\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-sl\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-sr\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-sv\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-sw\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-th\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-tl\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-tr\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-uk\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-vi\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-zh-rCN\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-zh-rHK\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-zh-rTW\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values-zu\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values\ads_attrs.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values\colors.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\myWorkspace\MileSharing\google-play-services_lib\res\values\strings.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/libs/google-play-services.jar" afterPath="$PROJECT_DIR$/../google-play-services_lib/libs/google-play-services.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/.classpath" afterPath="$PROJECT_DIR$/../google-play-services_lib/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../google-play-services_lib/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/soloway/transport/milesharing/BuildConfig.java" afterPath="$PROJECT_DIR$/gen/com/soloway/transport/milesharing/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../appcompat_v7/gen/android/support/v7/appcompat/BuildConfig.java" afterPath="$PROJECT_DIR$/../appcompat_v7/gen/android/support/v7/appcompat/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/gen/com/google/android/gms/BuildConfig.java" afterPath="$PROJECT_DIR$/../google-play-services_lib/gen/com/google/android/gms/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soloway/city/milesharing/MainMapActivity.java" afterPath="$PROJECT_DIR$/src/com/soloway/city/milesharing/MainMapActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soloway/city/milesharing/MapActivity.java" afterPath="$PROJECT_DIR$/src/com/soloway/city/milesharing/MapActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/gen/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/../google-play-services_lib/gen/com/google/android/gms/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/README.txt" afterPath="$PROJECT_DIR$/../google-play-services_lib/README.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/src/android/UnusedStub.java" afterPath="$PROJECT_DIR$/../google-play-services_lib/src/android/UnusedStub.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/res/drawable/common_signin_btn_icon_dark.xml" afterPath="$PROJECT_DIR$/../google-play-services_lib/res/drawable/common_signin_btn_icon_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/res/drawable/common_signin_btn_icon_light.xml" afterPath="$PROJECT_DIR$/../google-play-services_lib/res/drawable/common_signin_btn_icon_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/res/color/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/../google-play-services_lib/res/color/common_signin_btn_text_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/res/drawable/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/../google-play-services_lib/res/drawable/common_signin_btn_text_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/res/color/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/../google-play-services_lib/res/color/common_signin_btn_text_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/res/drawable/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/../google-play-services_lib/res/drawable/common_signin_btn_text_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/libs/google-play-services.jar.properties" afterPath="$PROJECT_DIR$/../google-play-services_lib/libs/google-play-services.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/res/values/maps_attrs.xml" afterPath="$PROJECT_DIR$/../google-play-services_lib/res/values/maps_attrs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/proguard.txt" afterPath="$PROJECT_DIR$/../google-play-services_lib/proguard.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/project.properties" afterPath="$PROJECT_DIR$/../google-play-services_lib/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../google-play-services_lib/res/values/version.xml" afterPath="$PROJECT_DIR$/../google-play-services_lib/res/values/version.xml" />
+    </list>
+    <ignored path="MileSharing.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="MileSharing" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="NavigationDrawerFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/soloway/transport/milesharing/NavigationDrawerFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="40" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="4896">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainMapActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/soloway/city/milesharing/MainMapActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="808" column="0" selection-start="29916" selection-end="29916" vertical-scroll-proportion="1.1975138" vertical-offset="12631" max-vertical-offset="13889">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/soloway/city/milesharing/MapActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="1" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="7871">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="61" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="1173">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/soloway/city/milesharing/MainMapActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/soloway/city/milesharing/MapActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MileSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MileSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MileSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MileSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MileSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soloway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MileSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MileSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soloway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="milesharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="SH0BYPL00314" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="MyAvd0" />
+  </component>
+  <component name="RunManager" selected="Android Application.MileSharing">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MileSharing" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="MileSharing" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Android Application.MileSharing" />
+    </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9eeab51e-d001-42db-b6b6-345ec6bfaae2" name="Default" comment="" />
+      <created>1408715953015</created>
+      <updated>1408715953015</updated>
+      <workItem from="1408715958609" duration="2794000" />
+      <workItem from="1408722270101" duration="3765000" />
+      <workItem from="1408734151737" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6570000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39809674" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40523395" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22239873" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32672483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24682035" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32831088" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32672483" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/transport/milesharing/NavigationDrawerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="40" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="4896">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/city/milesharing/MainMapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="808" column="0" selection-start="29916" selection-end="29916" vertical-scroll-proportion="0.0" vertical-offset="12892" max-vertical-offset="14127">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/city/milesharing/MapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="1" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="7871">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="61" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/transport/milesharing/NavigationDrawerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="40" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="4896">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/city/milesharing/MainMapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="41" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="14008">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/city/milesharing/MapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="1" selection-start="2193" selection-end="2193" vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="7922">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/city/milesharing/NavigationDrawerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="164" column="13" selection-start="6070" selection-end="6070" vertical-scroll-proportion="0.0" vertical-offset="2788" max-vertical-offset="5559">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lint.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1235">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/transport/milesharing/NavigationDrawerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="40" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MileSharing.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/city/milesharing/CustomList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="319" selection-end="319" vertical-scroll-proportion="0.041312274" vertical-offset="0" max-vertical-offset="823">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/city/milesharing/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="0.08262455" vertical-offset="0" max-vertical-offset="823">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/city/milesharing/NavigationDrawerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="164" column="13" selection-start="6070" selection-end="6070" vertical-scroll-proportion="2.0036452" vertical-offset="748" max-vertical-offset="5083">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/city/milesharing/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.34254143" vertical-offset="568" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/city/milesharing/MapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="1" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.0" vertical-offset="559" max-vertical-offset="7803">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="61" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soloway/city/milesharing/MainMapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="808" column="0" selection-start="29916" selection-end="29916" vertical-scroll-proportion="1.1975138" vertical-offset="12631" max-vertical-offset="13889">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Android 4.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>MileSharing</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>google-play-services</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

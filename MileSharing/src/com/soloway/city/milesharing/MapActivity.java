@@ -47,8 +47,6 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
-import com.google.android.maps.GeoPoint;
-import com.google.android.maps.Overlay;
 import com.soloway.city.milesharing.routing.GMapV2GetRouteDirection;
 import com.soloway.transport.milesharing.R;
 
@@ -84,8 +82,7 @@ public class MapActivity extends FragmentActivity implements LocationListener, O
     	      R.drawable.none
     	  
     	  };
-    List<Overlay> mapOverlays;
-    GeoPoint point1, point2;
+
     LocationManager locManager;
     Drawable drawable;
     org.w3c.dom.Document document;
@@ -181,7 +178,7 @@ public class MapActivity extends FragmentActivity implements LocationListener, O
             googleMap.animateCamera(CameraUpdateFactory.zoomTo(15));
             
             
-            //добавляет полигонную линию
+            //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
             
             
             /*
