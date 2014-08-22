@@ -59,8 +59,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
-import com.google.android.maps.GeoPoint;
-import com.google.android.maps.Overlay;
 import com.google.gson.Gson;
 import com.soloway.city.milesharing.api.UserProfile;
 import com.soloway.city.milesharing.api.UserSession;
@@ -119,8 +117,7 @@ public class MainMapActivity extends ActionBarActivity implements
       	      R.drawable.preferences_icon
     	  
     	  };
-    private List<Overlay> mapOverlays;
-    private GeoPoint point1, point2;
+
     private LocationManager locManager;
     private Drawable drawable;
     private org.w3c.dom.Document document;
@@ -334,7 +331,7 @@ public class MainMapActivity extends ActionBarActivity implements
 	        layout = (LinearLayout) findViewById(R.id.bottom_box);
 	        
 	        //showNotifyDialog();
-            //Фрагмент выбора роли
+            //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 	        //showRole();
 	        
 	        }
@@ -412,7 +409,7 @@ public class MainMapActivity extends ActionBarActivity implements
 	                    	
 	                    	UserProfile authUser = new UserProfile();
 	                    	if (reg){
-	                    		//регистрация пользователя
+	                    		//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	                    		EditText firstNameEdit = (EditText) newUserData.findViewById(R.id.txt_first_name);
 	                    		authUser.setFirstName(firstNameEdit.getText().toString());
 	                    		EditText lastNameEdit = (EditText) newUserData.findViewById(R.id.txt_last_name);
@@ -506,23 +503,23 @@ public class MainMapActivity extends ActionBarActivity implements
 
                     try {
                     	//
-                            //создаем запрос на сервер
+                            //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
                             DefaultHttpClient hc = new DefaultHttpClient();
                             ResponseHandler<String> res = new BasicResponseHandler();
-                            //он у нас будет посылать post запрос
+                            //пїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ post пїЅпїЅпїЅпїЅпїЅпїЅ
                             HttpPost postMethod = new HttpPost("http://78.47.251.3/users.php?push_user"+params[0].getRegData());
-                            //будем передавать два параметра
+                            //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-                            //передаем параметры из наших текстбоксов
-                            //логин
+                            //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+                            //пїЅпїЅпїЅпїЅпїЅ
 //                            nameValuePairs.add(new BasicNameValuePair("login", login.getText().toString()));?
-                            //пароль
+                            //пїЅпїЅпїЅпїЅпїЅпїЅ
 //                            nameValuePairs.add(new BasicNameValuePair("pass", pass.getText().toString()));
                            
                             
-                            //собераем их вместе и посылаем на сервер
+                            //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 //                            postMethod.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-                            //получаем ответ от сервера
+                            //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                             String response = hc.execute(postMethod, res);
                             
                     } catch (Exception e) {
@@ -542,7 +539,7 @@ public class MainMapActivity extends ActionBarActivity implements
             protected void onPreExecute() {
 
                     dialog = new ProgressDialog(MainMapActivity.this);
-                    dialog.setMessage("Загружаюсь...");
+                    dialog.setMessage("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ...");
                     dialog.setIndeterminate(true);
                     dialog.setCancelable(true);
                     dialog.show();
@@ -588,7 +585,7 @@ public class MainMapActivity extends ActionBarActivity implements
 	        @Override
 	        protected void onPreExecute() {
 	              Dialog = new ProgressDialog(MainMapActivity.this);
-	              Dialog.setMessage("Поиск маршрута...");
+	              Dialog.setMessage("пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ...");
 	              Dialog.show();
 	        }
 
@@ -635,10 +632,10 @@ public class MainMapActivity extends ActionBarActivity implements
 	                     
 	                     tvDis = (TextView) v.findViewById(R.id.textLength);
 	                     tvDur = (TextView) v.findViewById(R.id.textTime);
-	                    // tvDis.setText("Расстояние: "+String.valueOf(dis));
-	                    // tvDur.setText("Время: "+String.valueOf(dur));
-	                     tvDis.setText("Расстояние: "+String.valueOf((float) dis/1000)+ " км.");
-	                     tvDur.setText("Время: "+String.valueOf((int) dur/60)+" мин.");
+	                    // tvDis.setText("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: "+String.valueOf(dis));
+	                    // tvDur.setText("пїЅпїЅпїЅпїЅпїЅ: "+String.valueOf(dur));
+	                     tvDis.setText("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: "+String.valueOf((float) dis/1000)+ " пїЅпїЅ.");
+	                     tvDur.setText("пїЅпїЅпїЅпїЅпїЅ: "+String.valueOf((int) dur/60)+" пїЅпїЅпїЅ.");
 	                     
 	                     //bGo.setText("dgfd");
 	                   
