@@ -53,4 +53,5 @@
 <fullyQualifiedTypeName name="com.soloway.transport.milesharing.R.id"/>
 <fullyQualifiedTypeName name="com.google.android.gms.common.GooglePlayServicesClient"/>
 <fullyQualifiedTypeName name="android.content.DialogInterface"/>
+<fullyQualifiedTypeName name="com.google.android.gms.common.GooglePlayServicesClient.OnConnectionFailedListener"/>
 </qualifiedTypeNameHistroy>

@@ -22,13 +22,9 @@
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
 		<item value="529" key="DIALOG_WIDTH"/>
 		<item value="8" key="DIALOG_Y_ORIGIN"/>
-		<item value="427" key="DIALOG_X_ORIGIN"/>
 		<item value="695" key="DIALOG_HEIGHT"/>
+		<item value="427" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-	</section>
-	<section name="RefactoringWizard.preview">
-		<item value="400" key="height"/>
-		<item value="600" key="width"/>
 	</section>
 	<section name="JavaSearchPage">
 		<item value="false" key="CASE_SENSITIVE"/>
@@ -38,10 +34,10 @@
 			<item value="15" key="includeMask"/>
 			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
-			<item value="authUser" key="pattern"/>
 			<item value="" key="javaElement"/>
-			<item value="1" key="searchFor"/>
+			<item value="authUser" key="pattern"/>
 			<item value="0" key="matchLocations"/>
+			<item value="1" key="searchFor"/>
 			<item value="false" key="isCaseSensitive"/>
 			<list key="workingSets">
 			</list>
@@ -50,10 +46,10 @@
 			<item value="15" key="includeMask"/>
 			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
-			<item value="Section 1" key="pattern"/>
 			<item value="" key="javaElement"/>
-			<item value="4" key="searchFor"/>
+			<item value="Section 1" key="pattern"/>
 			<item value="0" key="matchLocations"/>
+			<item value="4" key="searchFor"/>
 			<item value="false" key="isCaseSensitive"/>
 			<list key="workingSets">
 			</list>
@@ -62,10 +58,10 @@
 			<item value="15" key="includeMask"/>
 			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
-			<item value="Driver" key="pattern"/>
 			<item value="" key="javaElement"/>
-			<item value="0" key="searchFor"/>
+			<item value="Driver" key="pattern"/>
 			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
 			<item value="false" key="isCaseSensitive"/>
 			<list key="workingSets">
 			</list>
@@ -74,10 +70,10 @@
 			<item value="15" key="includeMask"/>
 			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
-			<item value="activity_main_actions" key="pattern"/>
 			<item value="" key="javaElement"/>
-			<item value="0" key="searchFor"/>
+			<item value="activity_main_actions" key="pattern"/>
 			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
 			<item value="false" key="isCaseSensitive"/>
 			<list key="workingSets">
 			</list>
@@ -86,10 +82,10 @@
 			<item value="15" key="includeMask"/>
 			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
-			<item value="menu_drawer" key="pattern"/>
 			<item value="" key="javaElement"/>
-			<item value="0" key="searchFor"/>
+			<item value="menu_drawer" key="pattern"/>
 			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
 			<item value="false" key="isCaseSensitive"/>
 			<list key="workingSets">
 			</list>
@@ -98,33 +94,37 @@
 			<item value="15" key="includeMask"/>
 			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
-			<item value="navigation_drawer" key="pattern"/>
 			<item value="" key="javaElement"/>
-			<item value="4" key="searchFor"/>
+			<item value="navigation_drawer" key="pattern"/>
 			<item value="0" key="matchLocations"/>
+			<item value="4" key="searchFor"/>
 			<item value="false" key="isCaseSensitive"/>
 			<list key="workingSets">
 			</list>
 		</section>
 	</section>
+	<section name="RefactoringWizard.preview">
+		<item value="400" key="height"/>
+		<item value="600" key="width"/>
+	</section>
+	<section name="NewClassWizardPage">
+		<item value="false" key="create_constructor"/>
+		<item value="true" key="create_unimplemented"/>
+		<item value="false" key="create_main"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
-		<item value="*" key="patterns"/>
-		<item value="false" key="updateQualifiedNames"/>
 		<item value="false" key="renameSubpackages"/>
+		<item value="false" key="updateQualifiedNames"/>
+		<item value="*" key="patterns"/>
 		<item value="1" key="updateSimilarElementsMatchStrategy"/>
 		<item value="false" key="updateTextualMatches"/>
 		<item value="false" key="updateSimilarElements"/>
 	</section>
-	<section name="quick_assist_proposal_size">
-	</section>
-	<section name="NewClassWizardPage">
-		<item value="false" key="create_constructor"/>
-		<item value="false" key="create_main"/>
-		<item value="true" key="create_unimplemented"/>
-	</section>
 	<section name="SourceActionDialog.methods">
-		<item value="1" key="VisibilityModifier"/>
 		<item value="false" key="Comments"/>
+		<item value="1" key="VisibilityModifier"/>
 		<item value="2" key="InsertPosition.v2"/>
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="false" key="FinalModifier"/>

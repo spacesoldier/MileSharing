@@ -74,6 +74,7 @@ public class MainMapActivity extends ActionBarActivity implements
 		NavigationDrawerFragment.NavigationDrawerCallbacks, LocationListener, 
 		/*OnClickListener,*/ 
 		GooglePlayServicesClient.ConnectionCallbacks,
+		GooglePlayServicesClient.OnConnectionFailedListener,
 		/*OnMapClickListener,*/ OnMapLongClickListener /*,
 		UserLoginDialogListener*/ {
 
@@ -227,22 +228,23 @@ public class MainMapActivity extends ActionBarActivity implements
             if (location!=null){
             	fromPosition = new LatLng(location.getLatitude(), location.getLongitude());
             } else{
-            	mLocationClient = new LocationClient(this.getBaseContext(),null,null);//
+            	//mLocationClient = new LocationClient(this.getBaseContext(),null,null);//
+            	mLocationClient = new LocationClient(this,this,this);//
             	// Connect the client.
-                mLocationClient.connect();
-                location = mLocationClient.getLastLocation();
-            	fromPosition = new LatLng(location.getLatitude(), location.getLongitude());
+                //mLocationClient.connect();
+                //location = mLocationClient.getLastLocation();
+            	//fromPosition = new LatLng(location.getLatitude(), location.getLongitude());
             	//mLocationClient.disconnect();
             }
             
-            LatLng ln = new LatLng(location.getLatitude(),location.getLongitude());
+            /*LatLng ln = new LatLng(location.getLatitude(),location.getLongitude());
             googleMap.moveCamera(CameraUpdateFactory.newLatLng(ln));
-            googleMap.animateCamera(CameraUpdateFactory.zoomTo(15));
+            googleMap.animateCamera(CameraUpdateFactory.zoomTo(15));*/
             
             
             ///MY PART
             
-            prefs = this.getSharedPreferences("com.soloway.transport.milesharing", Context.MODE_PRIVATE);
+            prefs = this.getSharedPreferences("com.soloway.city.milesharing", Context.MODE_PRIVATE);
             String sessionJson = prefs.getString("USER_SESSION", "");
             Gson gson = new Gson();
             session = gson.fromJson(sessionJson, UserSession.class);
@@ -765,13 +767,23 @@ public class MainMapActivity extends ActionBarActivity implements
 		
 	}
 
+	boolean firstTimeLocClientConnect = true;
+	
 	@Override
 	public void onConnected(Bundle arg0) {
 		// TODO Auto-generated method stub
 		
 		location = mLocationClient.getLastLocation();
     	fromPosition = new LatLng(location.getLatitude(), location.getLongitude());
-    	mLocationClient.disconnect();
+    	//mLocationClient.disconnect();
+    	
+    	if (firstTimeLocClientConnect){
+    		LatLng ln = new LatLng(location.getLatitude(),location.getLongitude());
+            googleMap.moveCamera(CameraUpdateFactory.newLatLng(ln));
+            googleMap.animateCamera(CameraUpdateFactory.zoomTo(15));
+            firstTimeLocClientConnect = false;
+    	}
+    	
 	}
 
 	@Override
@@ -782,10 +794,10 @@ public class MainMapActivity extends ActionBarActivity implements
 	
 	@Override
 	public void onStart(){
+		super.onStart();
 		if (mLocationClient != null){
 			mLocationClient.connect();
 		}
-		super.onStart();
 	}
 	
 	@Override
@@ -805,6 +817,12 @@ public class MainMapActivity extends ActionBarActivity implements
          */
         mLocationClient.disconnect();
         super.onStop();
+	}
+
+	@Override
+	public void onConnectionFailed(ConnectionResult arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
