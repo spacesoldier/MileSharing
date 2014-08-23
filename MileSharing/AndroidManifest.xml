@@ -33,7 +33,7 @@
         <!--android:value="AIzaSyBRB9G7X4LraDi3hQiAKh7yqnmHTikrleA"--> 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value = "AIzaSyDNclU6lNaeAowgGzZW6vUUB5eIv7dQRPI"/>
+            android:value = "AIzaSyD2t3opeoQNygVTippeWgiH_9qzK9aHnRI"/>
 
         <activity
             android:name="com.soloway.city.milesharing.SplashActivity"
