@@ -34,7 +34,7 @@ public class PassDriveContentFragment extends Fragment {
 		seekBar.setMax(2000);
 		
 		tvLength = (TextView) viewHierarchy.findViewById(R.id.textLength);
-		tvLength.setText("200 м");
+		tvLength.setText("200 m");
 		parent = (PassDriveFragment) getParentFragment();
 		
 		seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
@@ -43,7 +43,7 @@ public class PassDriveContentFragment extends Fragment {
 		    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 		        progress = progress / 10;
 		        progress = progress * 10;
-		        tvLength.setText(String.valueOf(progress)+" м");
+		        tvLength.setText(String.valueOf(progress)+" m");
 		    }
 
 		    @Override
@@ -72,7 +72,7 @@ public class PassDriveContentFragment extends Fragment {
 		
 		
 		String mytag = this.getTag();
-		//по этому тэгу определяем вкладка водителя или пассажира открыта
+
 		
 		return viewHierarchy;
 		

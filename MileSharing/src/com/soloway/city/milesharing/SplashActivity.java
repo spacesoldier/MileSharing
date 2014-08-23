@@ -30,10 +30,7 @@ public class SplashActivity extends Activity {
 		  tapNext.setOnClickListener(new View.OnClickListener() {
 			    @Override
 			    public void onClick(View view) {
-//			        Intent myIntent=new Intent(view.getContext(),MapActivity.class );
 			        Intent myIntent=new Intent(view.getContext(),MainMapActivity.class );
-//			        Intent myIntent=new Intent(view.getContext(),MainMilesharingActivity.class );
-			        //myIntent.putExtra("prefs", PREFS_NAME);
 			        startActivity(myIntent);
 			        finish();
 			    }
