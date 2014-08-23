@@ -31,35 +31,14 @@ public class PassDriveFragment extends Fragment {
         mTabHost = (FragmentTabHost)rootView.findViewById(android.R.id.tabhost);
         mTabHost.setup(getActivity(), getChildFragmentManager(), R.id.realtabcontent);
 
-        //frp = new PassDriveContentFragment();
-        //frd = new PassDriveContentFragment();
-        //frp.setParent(this);
-        //frd.setParent(this);
-        
         setTargetFragment((Fragment) this, 1000);
         
         TabSpec photospec = mTabHost.newTabSpec("Photos");
-     // setting Title and Icon for the Tab
         photospec.setIndicator("Photos", getResources().getDrawable(R.drawable.driver_icon));
-        //Intent photosIntent = new Intent(this, PhotosActivity.class);
-       // mTabHost.addTab(arg0, arg1, arg2)
-        //photospec.setContent(viewId)
-        /*
-        TabSpec spec = mTabHost.newTabSpec("positions").setIndicator("Positions",
-        		getResources().getDrawable(R.drawable.pass_icon))
-                .setContent(R.id.LayoutTabPassDrive);
-        mTabHost.addTab(spec);
         
-        
-        TabSpec spec2 = mTabHost.newTabSpec("positions").setIndicator("Positions11",
-        		getResources().getDrawable(R.drawable.pass_icon))
-                .setContent(R.id.LayoutTabPassDrive);
-        mTabHost.addTab(spec2);
-        */
-        
-        mTabHost.addTab(mTabHost.newTabSpec("tabPass").setIndicator("Пассажир"),
+        mTabHost.addTab(mTabHost.newTabSpec("tabPass").setIndicator("Passenger"),
         		PassDriveContentFragment.class, null);
-        mTabHost.addTab(mTabHost.newTabSpec("tabDrive").setIndicator("Водитель"),
+        mTabHost.addTab(mTabHost.newTabSpec("tabDrive").setIndicator("Driver"),
         		PassDriveContentFragment.class, null);
 
 
@@ -69,8 +48,6 @@ public class PassDriveFragment extends Fragment {
     public void go(){
     	MainMapActivity mma = (MainMapActivity) getActivity();
     	mma.showLoginDialog(true, false);
-    	//clos();
-		//getActivity().getSupportFragmentManager().beginTransaction().remove(this).commit();		
 	}
     
     

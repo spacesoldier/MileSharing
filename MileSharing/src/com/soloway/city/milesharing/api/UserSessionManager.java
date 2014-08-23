@@ -65,7 +65,6 @@ public class UserSessionManager {
             public void run() {
 
                 HttpClient httpClient = new DefaultHttpClient();
-                //HttpPost httpPost = new HttpPost("http://78.47.251.3/users.php?push_user"+profile.getRegData());
                 String urlRegister="http://1.soloway-milesharing.appspot.com/milesharingbackend/reg_user";
                 NewUserRequest regRequest = new NewUserRequest();
                 
@@ -78,8 +77,6 @@ public class UserSessionManager {
                 regRequest.setPhone("<empty>");
                 regRequest.setMiddlename("<empty>");
                 regRequest.setRole("<empty>");
-                //private String role;
-                //private String devicetype;
                 
                 Gson gson = new Gson();
                 String regResultStr = gson.toJson(regRequest);
@@ -100,12 +97,6 @@ public class UserSessionManager {
                 	HttpResponse response = httpClient.execute(httpPost);
                     String result1 = EntityUtils.toString(response.getEntity());
                 	LoginUserResponse newRecResp = gson.fromJson(result1, LoginUserResponse.class);
-                    /*
-                    HttpResponse response = httpClient.execute(httpPost);
-                    if (response.toString().equalsIgnoreCase("OK")){
-                    	result.setOnline(true);
-                    }
-                    */
                     result.setOnline(true);
                     
                 } catch (ClientProtocolException e) {
@@ -135,14 +126,6 @@ public class UserSessionManager {
             public void run() {
 
                 HttpClient httpClient = new DefaultHttpClient();
-                //HttpPost httpPost = new HttpPost("http://78.47.251.3/users.php?auth_user"+profile.getAuthData());
-                
-                /*
-                 String urlRequest = "http://1.soloway-milesharing.appspot.com/milesharingbackend/locate";
-                 urlRequest = urlRequest+"?login="+String.valueOf(profile.getUserLogin());
-                 urlRequest = urlRequest+"&pass="+String.valueOf(profile.getUserPassword());
-                 HttpPost httpPost = new HttpPost(urlRequest);
-                 */
                 
                  String urlLogin="http://1.soloway-milesharing.appspot.com/milesharingbackend/login_user";
                  LoginUserRequest regRequest = new LoginUserRequest();
@@ -162,17 +145,10 @@ public class UserSessionManager {
 				
                  urlLogin = urlLogin +"?data="+regResultStr;
                 
-                 /*
-                 urlLogin= urlLogin.replace("\"","%22");
-                 urlLogin= urlLogin.replace("{","%7B");
-                 urlLogin= urlLogin.replace(":","%3A");
-                 urlLogin= urlLogin.replace(",","%2C");
-                 urlLogin= urlLogin.replace("}","%7D");
-                 */
                  HttpPost httpPost = new HttpPost(urlLogin);
               
                 /* 
-                 * 19.05.14 ÈÑÏÐÀÂÈË
+                 * 19.05.14 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 HttpPost httpPost = new HttpPost("http://1.soloway-milesharing.appspot.com/milesharingbackend/locate");
                
                 HttpParams params = httpPost.getParams();
