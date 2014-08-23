@@ -771,6 +771,9 @@ public class MainMapActivity extends ActionBarActivity implements
 		// TODO Auto-generated method stub
 		
 		location = mLocationClient.getLastLocation();
+        if(location == null){
+            location = new Location("network");
+        }
     	fromPosition = new LatLng(location.getLatitude(), location.getLongitude());
     	//mLocationClient.disconnect();
     	
