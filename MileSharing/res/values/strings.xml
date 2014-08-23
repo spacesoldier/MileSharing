@@ -23,19 +23,13 @@
         <item>Item 5</item>
         <item>Prefernces</item>
     </string-array>
-    <string-array name="items_pass">
-        <item>Найти машину</item>
-        <item>История</item>
+    <string-array name="menu_items">
+        <item>Поездка</item>
         <item>Маршрут</item>
-        <item>Люди</item>
-        <item>Настройки</item>
-    </string-array>
-    <string-array name="items_driver">
-        <item>Подвезти</item>
-        <item>История</item>
-        <item>Маршрут</item>
-        <item>Люди</item>
-        <item>Настройки</item>
+        <item>Мой Счёт</item>
+        <item>Мой Профиль</item>
+        <item>Журнал</item>
+        <item>Попутчики</item>
     </string-array>
 
     <string name="pass_menu">Passanger</string>
