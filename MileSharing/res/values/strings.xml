@@ -32,6 +32,8 @@
         <item>Попутчики</item>
     </string-array>
 
+    <string name="settings">Настройки</string>
+
     <string name="pass_menu">Passanger</string>
     <string name="driver_menu">Driver</string>
     <string name="title_activity_main_map">MileSharing</string>
