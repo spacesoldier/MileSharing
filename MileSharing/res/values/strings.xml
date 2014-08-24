@@ -43,6 +43,8 @@
     <string name="where_to">Куда:</string>
     <string name="mile">Количество миль:</string>
     <string name="buy">Пополнить счёт</string>
+    <string name="toast_pass">Поиск попутки, задайте маршрут</string>
+    <string name="toast_driver">Поиск попутчика, задайте маршрут</string>
 
     <string name="pass_menu">Passanger</string>
     <string name="driver_menu">Driver</string>

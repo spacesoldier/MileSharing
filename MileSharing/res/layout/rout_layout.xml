@@ -32,7 +32,7 @@
     <TextView android:layout_width="wrap_content"
               android:textColor="@android:color/darker_gray"
               android:text="@string/time"
-              android:layout_below="@+id/distance"
+              android:layout_below="@+id/distanceLabel"
               android:layout_marginTop="20dp"
               android:id="@+id/timeLabel"
               android:textSize="18sp"

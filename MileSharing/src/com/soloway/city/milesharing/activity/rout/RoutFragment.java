@@ -2,6 +2,7 @@ package com.soloway.city.milesharing.activity.rout;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,8 +27,8 @@ public class RoutFragment extends Fragment {
         return new RoutFragment();
     }
 
-    private void initView(LayoutInflater inflater, ViewGroup container) {
-        fragmentView = inflater.inflate(R.layout.rout_layout, container, false);
+    private View initView(LayoutInflater inflater, ViewGroup container) {
+        View fragmentView = inflater.inflate(R.layout.rout_layout, container, false);
         if (fragmentView != null) {
             distanceTextView = (TextView) fragmentView.findViewById(R.id.distance);
             timeTextView = (TextView) fragmentView.findViewById(R.id.time);
@@ -38,6 +39,7 @@ public class RoutFragment extends Fragment {
                 timeTextView.setText(String.valueOf(time) + " " + getString(R.string.min));
             }
         }
+        return fragmentView;
     }
 
     @Override
@@ -46,7 +48,7 @@ public class RoutFragment extends Fragment {
             return null;
         }
 
-        initView(inflater, container);
+        fragmentView = initView(inflater, container);
         return fragmentView;
     }
 

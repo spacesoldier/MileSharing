@@ -14,6 +14,7 @@ import com.soloway.city.milesharing.activity.cash.CashFragment;
 import com.soloway.city.milesharing.activity.navigationDrawer.NavigationDrawerFragment;
 import com.soloway.city.milesharing.activity.profile.MyProfileFragment;
 import com.soloway.city.milesharing.activity.rout.RoutFragment;
+import com.soloway.city.milesharing.core.RoleHelper;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.HttpPost;
@@ -639,7 +640,6 @@ public class MainMapActivity extends ActionBarActivity implements
                 break;
             case 1:
                 fragment = RoutFragment.newInstance((float) dis / 1000,(int) dur / 60);
-
                 break;
             case 2:
                 fragment = CashFragment.newInstance();
@@ -663,7 +663,14 @@ public class MainMapActivity extends ActionBarActivity implements
 
     @Override
     public void onNavigationDrawerRoleChanged() {
-
+        switch (RoleHelper.getRole()){
+            case RoleHelper.ROLE_PASS:
+                Toast.makeText(getApplicationContext(), getString(R.string.toast_pass), Toast.LENGTH_LONG).show();
+                break;
+            case RoleHelper.ROLE_DRIVER:
+                Toast.makeText(getApplicationContext(), getString(R.string.toast_driver), Toast.LENGTH_LONG).show();
+                break;
+        }
     }
 
     @Override

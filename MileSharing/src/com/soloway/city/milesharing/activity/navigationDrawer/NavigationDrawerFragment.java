@@ -302,10 +302,8 @@ public class NavigationDrawerFragment extends Fragment {
                 default:
                     RoleHelper.setRole(RoleHelper.ROLE_PASS);
             }
+            mDrawerLayout.closeDrawers();
             updateRole();
-            if (mCallbacks != null) {
-                mCallbacks.onNavigationDrawerRoleChanged();
-            }
         }
     };
 
@@ -316,6 +314,9 @@ public class NavigationDrawerFragment extends Fragment {
         } else {
             passRoleView.setBackgroundColor(getResources().getColor(R.color.selected_role_color));
             driverRoleView.setBackgroundColor(Color.TRANSPARENT);
+        }
+        if (mCallbacks != null) {
+            mCallbacks.onNavigationDrawerRoleChanged();
         }
     }
 
