@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/blue_notsotransparent" >
+                android:background="@color/blue_transparent" >
     <ImageView android:layout_width="55dp"
                  android:id="@+id/passButton"
                  android:scaleType="fitCenter"
@@ -16,9 +16,16 @@
                  android:layout_below="@+id/passButton"
                  android:src="@drawable/driver_icon"
                  android:layout_height="55dp"/>
-    <View android:layout_width="5dp"
+    <ImageView android:layout_width="55dp"
+               android:padding="10dp"
+               android:id="@+id/addRoleButton"
+               android:scaleType="fitCenter"
+               android:layout_below="@+id/driverButton"
+               android:src="@drawable/add_role"
+               android:layout_height="55dp"/>
+    <View android:layout_width="2dp"
           android:id="@+id/divider"
-          android:background="@android:color/black"
+          android:background="@color/black_transparent"
           android:layout_toRightOf="@+id/driverButton"
           android:layout_height="match_parent"/>
     <ListView
@@ -28,16 +35,16 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:choiceMode="singleChoice"
-              android:divider="@android:color/black"
-              android:dividerHeight="5dp"
+              android:divider="@color/black_transparent"
+              android:dividerHeight="2dp"
               android:layout_above="@+id/divider2"
               tools:context="com.soloway.transport.milesharing.NavigationDrawerFragment" />
     <View android:layout_width="match_parent"
           android:id="@+id/divider2"
           android:layout_above="@+id/settings"
-          android:background="@android:color/black"
+          android:background="@color/black_transparent"
           android:layout_toRightOf="@+id/divider"
-          android:layout_height="5dp"/>
+          android:layout_height="2dp"/>
     <TextView android:layout_width="match_parent"
               android:id="@+id/settings"
               android:gravity="center"
@@ -45,14 +52,15 @@
               android:layout_toRightOf="@+id/divider"
               android:textColor="@android:color/white"
               android:textSize="18sp"
+              android:clickable="true"
               android:paddingTop="10dp"
               android:text="@string/settings"
               android:paddingBottom="10dp"
               android:layout_height="wrap_content"/>
     <View android:layout_width="match_parent"
           android:id="@+id/divider3"
-          android:background="@android:color/black"
+          android:background="@color/black_transparent"
           android:layout_alignParentBottom="true"
           android:layout_toRightOf="@+id/divider"
-          android:layout_height="5dp"/>
+          android:layout_height="2dp"/>
 </RelativeLayout>

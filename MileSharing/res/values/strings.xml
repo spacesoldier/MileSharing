@@ -33,6 +33,7 @@
     </string-array>
 
     <string name="settings">Настройки</string>
+    <string name="go">Поехали</string>
 
     <string name="pass_menu">Passanger</string>
     <string name="driver_menu">Driver</string>

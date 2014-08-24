@@ -1,9 +1,10 @@
 <resources>
 
     <color name="black_overlay">#66000000</color>
-    <color name="blue_transparent">#161eabed</color> <!--  цвет более прозрачный -->
+    <color name="blue_transparent">#331eabed</color> <!--  цвет более прозрачный -->
+    <color name="black_transparent">#77000000</color>
     <color name="blue_notsotransparent">#1eabed</color>
     <color name="white_text_color">#FFFFFF</color>
 
-    <color name="selected_role_color">#336982</color>
+    <color name="selected_role_color">#AA1b475b</color>
 </resources>

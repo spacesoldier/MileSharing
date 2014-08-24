@@ -5,6 +5,10 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.graphics.Point;
+import android.widget.*;
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.model.*;
 import com.soloway.city.milesharing.activity.navigationDrawer.NavigationDrawerFragment;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ResponseHandler;
@@ -37,11 +41,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesClient;
@@ -53,10 +52,6 @@ import com.google.android.gms.maps.GoogleMap.InfoWindowAdapter;
 import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
 import com.google.android.gms.maps.GoogleMap.OnMapLongClickListener;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.gson.Gson;
 import com.soloway.city.milesharing.api.UserProfile;
 import com.soloway.city.milesharing.api.UserSession;
@@ -102,10 +97,11 @@ public class MainMapActivity extends ActionBarActivity implements
     private MyApplication myApp;
 
     private Marker marker;
-    private LinearLayout layout;
-    private LinearLayout layout_top;
+    private RelativeLayout infoLayout;
     private TextView tvDis;
     private TextView tvDur;
+    private Button btnGo;
+    private ImageView btnClose;
 
     int dur;
     int dis;
@@ -123,6 +119,11 @@ public class MainMapActivity extends ActionBarActivity implements
         mNavigationDrawerFragment.setUp(R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
+        infoLayout = (RelativeLayout) findViewById(R.id.info);
+        tvDis = (TextView) findViewById(R.id.distance);
+        tvDur = (TextView) findViewById(R.id.time);
+        btnGo = (Button) findViewById(R.id.go);
+        btnClose = (ImageView) findViewById(R.id.close);
         myApp = (MyApplication) getApplicationContext();
         // MAP STUFF
 
@@ -167,6 +168,13 @@ public class MainMapActivity extends ActionBarActivity implements
 
             locationManager.requestLocationUpdates(provider, 20000, 0, this);
             googleMap.setOnMapLongClickListener(this);
+            googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+                @Override
+                public boolean onMarkerClick(Marker marker) {
+                    infoLayout.setVisibility(View.VISIBLE);
+                    return false;
+                }
+            });
 
             // ///
             // //MY PART
@@ -258,21 +266,29 @@ public class MainMapActivity extends ActionBarActivity implements
     @Override
     public void onMapLongClick(LatLng point) {
 
-        toPosition = new LatLng(point.latitude, point.longitude);
-        googleMap.clear();
-        GetRouteTask getRoute = new GetRouteTask();
-        getRoute.execute();
+        if (googleMap != null) {
+            toPosition = new LatLng(point.latitude, point.longitude);
+            googleMap.clear();
+            GetRouteTask getRoute = new GetRouteTask();
+            getRoute.execute();
 
-        if (marker != null) {
-            marker.remove();
+            if (marker != null) {
+                marker.remove();
+            }
+
+            marker = googleMap.addMarker(new MarkerOptions().position(point).draggable(false).visible(true));
+
+            LatLngBounds.Builder builder = new LatLngBounds.Builder();
+            builder = builder.include(new LatLng(googleMap.getMyLocation().getLatitude(), googleMap.getMyLocation().getLongitude()));
+            builder = builder.include(toPosition);
+            LatLngBounds bounds = builder.build();
+            CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, this.getResources()
+                    .getDisplayMetrics().widthPixels,
+                    this.getResources().getDisplayMetrics().heightPixels, 100);
+            googleMap.animateCamera(cu);
         }
-
-        marker = googleMap.addMarker(new MarkerOptions().position(point)
-                .title("Go").draggable(true).visible(true));
-
-        layout = (LinearLayout) findViewById(R.id.bottom_box);
-
     }
+
 
     //DialogInterface loginDialog = null;
     AlertDialog loginDialog = null;
@@ -555,50 +571,26 @@ public class MainMapActivity extends ActionBarActivity implements
                 dur = v2GetRouteDirection.getDurationValue(document);
                 dis = v2GetRouteDirection.getDistanceValue(document);
 
-                googleMap.setInfoWindowAdapter(new InfoWindowAdapter() {
+                tvDis.setText("Distance: "
+                        + String.valueOf((float) dis / 1000)
+                        + " km");
+                tvDur.setText("Time: "
+                        + String.valueOf((int) dur / 60)
+                        + " minutes");
 
-                    // Use default InfoWindow frame
+                infoLayout.setVisibility(View.VISIBLE);
+                btnGo.setOnClickListener(new OnClickListener() {
                     @Override
-                    public View getInfoWindow(Marker arg0) {
-                        return null;
-                    }
-
-                    // Defines the contents of the InfoWindow
-                    @Override
-                    public View getInfoContents(Marker arg0) {
-
-                        // Getting view from the layout file info_window_layout
-                        View v = getLayoutInflater().inflate(
-                                R.layout.info_window, null);
-
-                        // Getting the position from the marker
-                        LatLng latLng = arg0.getPosition();
-
-                        tvDis = (TextView) v.findViewById(R.id.textLength);
-                        tvDur = (TextView) v.findViewById(R.id.textTime);
-                        tvDis.setText("Distance: "
-                                + String.valueOf((float) dis / 1000)
-                                + " km");
-                        tvDur.setText("Time: "
-                                + String.valueOf((int) dur / 60)
-                                + " minutes");
-
-                        noBtns = false;
-
-                        return v;
-
+                    public void onClick(View view) {
+                        showLogin();
                     }
                 });
-
-                marker.showInfoWindow();
-
-                googleMap
-                        .setOnInfoWindowClickListener(new OnInfoWindowClickListener() {
-                            public void onInfoWindowClick(Marker marker) {
-                                //showRole();
-                                showLogin();
-                            }
-                        });
+                btnClose.setOnClickListener(new OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        infoLayout.setVisibility(View.GONE);
+                    }
+                });
 
                 ArrayList<LatLng> directionPoint = v2GetRouteDirection
                         .getDirection(document);
@@ -623,16 +615,36 @@ public class MainMapActivity extends ActionBarActivity implements
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
-        // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
-        /*
-		 * fragmentManager .beginTransaction() .replace(R.id.content_frame,
-		 * PlaceholderFragment.newInstance(position + 1)).commit();
-		 */
+        Fragment fragment;
+        switch (position) {
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+        }
+
+//        fragmentManager.beginTransaction()
+//                .replace(R.id.content_frame, fragment)
+//                .commit();
+
     }
 
     @Override
     public void onNavigationDrawerRoleChanged() {
+
+    }
+
+    @Override
+    public void onNavigationDrawerSettingsSelected() {
 
     }
 
@@ -657,35 +669,35 @@ public class MainMapActivity extends ActionBarActivity implements
         actionBar.setTitle(mTitle);
     }
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		switch (item.getItemId()) {
-		case R.id.pass_item:
-			// newGame();
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        switch (item.getItemId()) {
+            case R.id.pass_item:
+                // newGame();
 
 //			drawerListViewItems = getResources().getStringArray(
 //					R.array.items_pass);
 //			adapter.refreshItems(drawerListViewItems, imageId_p);
 //			drawerListView.setAdapter(adapter);
 
-			return true;
-		case R.id.driver_item:
+                return true;
+            case R.id.driver_item:
 
 //			drawerListViewItems = getResources().getStringArray(
 //					R.array.items_driver);
 //			adapter.refreshItems(drawerListViewItems, imageId_d);
 //			adapter.notifyDataSetChanged();
-			// drawerListView.setAdapter(adapter);
+                // drawerListView.setAdapter(adapter);
 
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
-		}
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
 
-	}
+    }
 
     boolean firstTimeLocClientConnect = true;
 
@@ -727,16 +739,16 @@ public class MainMapActivity extends ActionBarActivity implements
     @Override
     public void onStop() {
         // If the client is connected
-        if (mLocationClient.isConnected()) {
-			/*
-			 * Remove location updates for a listener. The current Activity is
-			 * the listener, so the argument is "this".
-			 */
-            mLocationClient
-                    .removeLocationUpdates((com.google.android.gms.location.LocationListener) this);
-        }
-		/*
-		 * After disconnect() is called, the client is considered "dead".
+//        if (mLocationClient.isConnected()) {
+//			/*
+//			 * Remove location updates for a listener. The current Activity is
+//			 * the listener, so the argument is "this".
+//			 */
+//            mLocationClient
+//                    .removeLocationUpdates((com.google.android.gms.location.LocationListener) this);
+//        }
+        /*
+         * After disconnect() is called, the client is considered "dead".
 		 */
         mLocationClient.disconnect();
         super.onStop();

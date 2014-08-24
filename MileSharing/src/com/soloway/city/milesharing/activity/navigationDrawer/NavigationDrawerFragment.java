@@ -18,6 +18,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import android.widget.TextView;
 import com.soloway.city.milesharing.core.RoleHelper;
 import com.soloway.transport.milesharing.R;
 
@@ -51,8 +52,9 @@ public class NavigationDrawerFragment extends Fragment {
 
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerListView;
-    private ImageView passRole;
-    private ImageView driverRole;
+    private ImageView passRoleView;
+    private ImageView driverRoleView;
+    private TextView settingsTextView;
     private View mFragmentContainerView;
 
     private NavigationDrawerAdapter adapter;
@@ -81,6 +83,7 @@ public class NavigationDrawerFragment extends Fragment {
         adapter = new NavigationDrawerAdapter(getActivity());
         // Select either the default item (0) or the last selected item.
         selectItem(mCurrentSelectedPosition);
+        setTitle(getResources().getStringArray(R.array.menu_items)[mCurrentSelectedPosition]);
     }
 
     @Override
@@ -96,8 +99,9 @@ public class NavigationDrawerFragment extends Fragment {
         View fragmentView = inflater.inflate(
                 R.layout.fragment_navigation_drawer, container, false);
         mDrawerListView = (ListView) fragmentView.findViewById(R.id.menuList);
-        passRole = (ImageView) fragmentView.findViewById(R.id.passButton);
-        driverRole = (ImageView) fragmentView.findViewById(R.id.driverButton);
+        passRoleView = (ImageView) fragmentView.findViewById(R.id.passButton);
+        driverRoleView = (ImageView) fragmentView.findViewById(R.id.driverButton);
+        settingsTextView = (TextView) fragmentView.findViewById(R.id.settings);
         mDrawerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -108,8 +112,9 @@ public class NavigationDrawerFragment extends Fragment {
         mDrawerListView.setAdapter(adapter);
 
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
-        passRole.setOnClickListener(onRoleListener);
-        driverRole.setOnClickListener(onRoleListener);
+        passRoleView.setOnClickListener(onRoleListener);
+        driverRoleView.setOnClickListener(onRoleListener);
+        settingsTextView.setOnClickListener(onSettingsClickListener);
         updateRole();
         return fragmentView;
     }
@@ -151,7 +156,7 @@ public class NavigationDrawerFragment extends Fragment {
                 if (!isAdded()) {
                     return;
                 }
-
+                setTitle(getResources().getStringArray(R.array.menu_items)[mCurrentSelectedPosition]);
                 getActivity().supportInvalidateOptionsMenu(); // calls onPrepareOptionsMenu()
             }
 
@@ -170,7 +175,7 @@ public class NavigationDrawerFragment extends Fragment {
                             .getDefaultSharedPreferences(getActivity());
                     sp.edit().putBoolean(PREF_USER_LEARNED_DRAWER, true).apply();
                 }
-
+                setTitle(getString(R.string.app_name));
                 getActivity().supportInvalidateOptionsMenu(); // calls onPrepareOptionsMenu()
             }
         };
@@ -271,6 +276,13 @@ public class NavigationDrawerFragment extends Fragment {
         return ((ActionBarActivity) getActivity()).getSupportActionBar();
     }
 
+    private void setTitle(String title){
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+        actionBar.setTitle(title);
+    }
+
     private View.OnClickListener onRoleListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -293,13 +305,22 @@ public class NavigationDrawerFragment extends Fragment {
 
     private void updateRole(){
         if(RoleHelper.getRole() == RoleHelper.ROLE_DRIVER){
-            driverRole.setBackgroundColor(getResources().getColor(R.color.selected_role_color));
-            passRole.setBackgroundColor(Color.TRANSPARENT);
+            driverRoleView.setBackgroundColor(getResources().getColor(R.color.selected_role_color));
+            passRoleView.setBackgroundColor(Color.TRANSPARENT);
         } else {
-            passRole.setBackgroundColor(getResources().getColor(R.color.selected_role_color));
-            driverRole.setBackgroundColor(Color.TRANSPARENT);
+            passRoleView.setBackgroundColor(getResources().getColor(R.color.selected_role_color));
+            driverRoleView.setBackgroundColor(Color.TRANSPARENT);
         }
     }
+
+    private View.OnClickListener onSettingsClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            if (mCallbacks != null) {
+                mCallbacks.onNavigationDrawerSettingsSelected();
+            }
+        }
+    };
 
 
     /**
@@ -311,5 +332,6 @@ public class NavigationDrawerFragment extends Fragment {
          */
         public void onNavigationDrawerItemSelected(int position);
         public void onNavigationDrawerRoleChanged();
+        public void onNavigationDrawerSettingsSelected();
     }
 }
