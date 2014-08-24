@@ -16,6 +16,7 @@ import com.soloway.city.milesharing.activity.journal.JournalFragment;
 import com.soloway.city.milesharing.activity.navigationDrawer.NavigationDrawerFragment;
 import com.soloway.city.milesharing.activity.profile.MyProfileFragment;
 import com.soloway.city.milesharing.activity.rout.RoutFragment;
+import com.soloway.city.milesharing.activity.settings.SettingsFragment;
 import com.soloway.city.milesharing.core.RoleHelper;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ResponseHandler;
@@ -697,7 +698,10 @@ public class MainMapActivity extends ActionBarActivity implements
 
     @Override
     public void onNavigationDrawerSettingsSelected() {
-
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.content_frame, SettingsFragment.newInstance())
+                .commit();
+        mapLayout.setVisibility(View.GONE);
     }
 
     public void onSectionAttached(int number) {

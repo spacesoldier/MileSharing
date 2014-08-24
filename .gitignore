@@ -57,3 +57,5 @@ MileSharing/bin/classes/com/soloway/city/milesharing/activity/rout/RoutFragment.
 MileSharing/bin/classes/com/soloway/city/milesharing/activity/cash/CashFragment.class
 MileSharing/bin/classes/com/soloway/city/milesharing/activity/companion/CompanionFragment.class
 MileSharing/bin/classes/com/soloway/city/milesharing/activity/journal/JournalFragment.class
+MileSharing/bin/classes/com/soloway/city/milesharing/activity/settings/SettingsFragment$1.class
+MileSharing/bin/classes/com/soloway/city/milesharing/activity/settings/SettingsFragment.class

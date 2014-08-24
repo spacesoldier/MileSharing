@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@android:color/darker_gray"
+              android:text="@string/search_radius"
+              android:layout_marginTop="20dp"
+              android:id="@+id/searchRadiusLabel"
+              android:layout_centerHorizontal="true"
+              android:textSize="20sp"
+              android:layout_height="wrap_content"/>
+
+    <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:thumb="@drawable/man"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/car"
+            android:layout_below="@+id/searchRadiusLabel"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent" />
+
+    <ImageView android:layout_width="45dp"
+               android:id="@+id/car"
+               android:src="@drawable/ic_launcher"
+               android:scaleType="fitCenter"
+               android:layout_alignParentRight="true"
+               android:layout_below="@+id/searchRadiusLabel"
+               android:layout_marginTop="7dp"
+               android:paddingRight="10dp"
+               android:layout_height="45dp"/>
+
+    <TextView
+            android:id="@+id/searchResultLabel"
+            android:layout_below="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="@string/search_radius_result"/>
+    <TextView
+            android:id="@+id/km"
+            android:layout_below="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/searchResultLabel"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blue_notsotransparent"/>
+</RelativeLayout>
