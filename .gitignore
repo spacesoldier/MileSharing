@@ -55,3 +55,5 @@ MileSharing/bin/classes/com/soloway/city/milesharing/activity/navigationDrawer/N
 MileSharing/bin/classes/com/soloway/city/milesharing/activity/profile/MyProfileFragment.class
 MileSharing/bin/classes/com/soloway/city/milesharing/activity/rout/RoutFragment.class
 MileSharing/bin/classes/com/soloway/city/milesharing/activity/cash/CashFragment.class
+MileSharing/bin/classes/com/soloway/city/milesharing/activity/companion/CompanionFragment.class
+MileSharing/bin/classes/com/soloway/city/milesharing/activity/journal/JournalFragment.class

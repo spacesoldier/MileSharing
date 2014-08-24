@@ -1,4 +1,4 @@
-package com.soloway.city.milesharing.activity.profile;
+package com.soloway.city.milesharing.activity.journal;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,16 +10,16 @@ import com.soloway.transport.milesharing.R;
 /**
  * Created by pens on 24.08.14.
  */
-public class MyProfileFragment extends Fragment {
+public class JournalFragment extends Fragment {
 
     private View fragmentView;
 
-    public static MyProfileFragment newInstance() {
-        return new MyProfileFragment();
+    public static JournalFragment newInstance() {
+        return new JournalFragment();
     }
 
     private void initView(LayoutInflater inflater, ViewGroup container) {
-        fragmentView = inflater.inflate(R.layout.profile_layout, container, false);
+        fragmentView = inflater.inflate(R.layout.journal_layout, container, false);
 
     }
 
@@ -39,4 +39,3 @@ public class MyProfileFragment extends Fragment {
     }
 
 }
-

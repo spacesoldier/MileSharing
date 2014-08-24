@@ -11,6 +11,8 @@ import android.widget.*;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.model.*;
 import com.soloway.city.milesharing.activity.cash.CashFragment;
+import com.soloway.city.milesharing.activity.companion.CompanionFragment;
+import com.soloway.city.milesharing.activity.journal.JournalFragment;
 import com.soloway.city.milesharing.activity.navigationDrawer.NavigationDrawerFragment;
 import com.soloway.city.milesharing.activity.profile.MyProfileFragment;
 import com.soloway.city.milesharing.activity.rout.RoutFragment;
@@ -649,10 +651,13 @@ public class MainMapActivity extends ActionBarActivity implements
                 fragment = CashFragment.newInstance();
                 break;
             case 3:
+                fragment = MyProfileFragment.newInstance();
                 break;
             case 4:
+                fragment = JournalFragment.newInstance();
                 break;
             case 5:
+                fragment = CompanionFragment.newInstance();
                 break;
         }
 

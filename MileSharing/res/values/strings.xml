@@ -45,6 +45,11 @@
     <string name="buy">Пополнить счёт</string>
     <string name="toast_pass">Поиск попутки, задайте маршрут</string>
     <string name="toast_driver">Поиск попутчика, задайте маршрут</string>
+    <string name="journal">Журнал поездок</string>
+    <string name="companion">Ближайшие попутчики</string>
+    <string name="first_name">Имя:</string>
+    <string name="last_name">Фамилия:</string>
+    <string name="about_me">О себе:</string>
 
     <string name="pass_menu">Passanger</string>
     <string name="driver_menu">Driver</string>
