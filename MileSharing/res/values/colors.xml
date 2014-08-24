@@ -4,4 +4,6 @@
     <color name="blue_transparent">#161eabed</color> <!--  цвет более прозрачный -->
     <color name="blue_notsotransparent">#1eabed</color>
     <color name="white_text_color">#FFFFFF</color>
+
+    <color name="selected_role_color">#336982</color>
 </resources>

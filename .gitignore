@@ -42,3 +42,10 @@ MileSharing/bin/classes/com/soloway/transport/milesharing/R$styleable.class
 MileSharing/bin/classes/com/soloway/transport/milesharing/R.class
 MileSharing/classes/production/appcompat_v7/android/support/v7/appcompat/BuildConfig.class
 MileSharing/classes/production/google-play-services_lib/com/google/android/gms/BuildConfig.class
+MileSharing/.idea/uiDesigner.xml
+MileSharing/.idea/workspace.xml
+MileSharing/bin/classes/MileSharing.apk
+MileSharing/bin/classes/android/support/v7/appcompat/R$color.class
+MileSharing/bin/classes/com/google/android/gms/R$color.class
+MileSharing/bin/classes/com/soloway/city/milesharing/activity/navigationDrawer/NavigationDrawerFragment$4.class
+MileSharing/bin/classes/com/soloway/city/milesharing/core/RoleHelper.class

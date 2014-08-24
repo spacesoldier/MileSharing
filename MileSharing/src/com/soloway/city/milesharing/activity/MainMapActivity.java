@@ -632,7 +632,7 @@ public class MainMapActivity extends ActionBarActivity implements
     }
 
     @Override
-    public void onNavigationDrawerRoleChanged(int position) {
+    public void onNavigationDrawerRoleChanged() {
 
     }
 

@@ -3,6 +3,7 @@ package com.soloway.city.milesharing.activity.navigationDrawer;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -14,8 +15,10 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.*;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.soloway.city.milesharing.core.RoleHelper;
 import com.soloway.transport.milesharing.R;
 
 /**
@@ -48,6 +51,8 @@ public class NavigationDrawerFragment extends Fragment {
 
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerListView;
+    private ImageView passRole;
+    private ImageView driverRole;
     private View mFragmentContainerView;
 
     private NavigationDrawerAdapter adapter;
@@ -91,6 +96,8 @@ public class NavigationDrawerFragment extends Fragment {
         View fragmentView = inflater.inflate(
                 R.layout.fragment_navigation_drawer, container, false);
         mDrawerListView = (ListView) fragmentView.findViewById(R.id.menuList);
+        passRole = (ImageView) fragmentView.findViewById(R.id.passButton);
+        driverRole = (ImageView) fragmentView.findViewById(R.id.driverButton);
         mDrawerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -101,6 +108,9 @@ public class NavigationDrawerFragment extends Fragment {
         mDrawerListView.setAdapter(adapter);
 
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
+        passRole.setOnClickListener(onRoleListener);
+        driverRole.setOnClickListener(onRoleListener);
+        updateRole();
         return fragmentView;
     }
 
@@ -261,6 +271,36 @@ public class NavigationDrawerFragment extends Fragment {
         return ((ActionBarActivity) getActivity()).getSupportActionBar();
     }
 
+    private View.OnClickListener onRoleListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()){
+                case R.id.passButton:
+                    RoleHelper.setRole(RoleHelper.ROLE_PASS);
+                    break;
+                case R.id.driverButton:
+                    RoleHelper.setRole(RoleHelper.ROLE_DRIVER);
+                    break;
+                default:
+                    RoleHelper.setRole(RoleHelper.ROLE_PASS);
+            }
+            updateRole();
+            if (mCallbacks != null) {
+                mCallbacks.onNavigationDrawerRoleChanged();
+            }
+        }
+    };
+
+    private void updateRole(){
+        if(RoleHelper.getRole() == RoleHelper.ROLE_DRIVER){
+            driverRole.setBackgroundColor(getResources().getColor(R.color.selected_role_color));
+            passRole.setBackgroundColor(Color.TRANSPARENT);
+        } else {
+            passRole.setBackgroundColor(getResources().getColor(R.color.selected_role_color));
+            driverRole.setBackgroundColor(Color.TRANSPARENT);
+        }
+    }
+
 
     /**
      * Callbacks interface that all activities using this fragment must implement.
@@ -270,6 +310,6 @@ public class NavigationDrawerFragment extends Fragment {
          * Called when an item in the navigation drawer is selected.
          */
         public void onNavigationDrawerItemSelected(int position);
-        public void onNavigationDrawerRoleChanged(int position);
+        public void onNavigationDrawerRoleChanged();
     }
 }
