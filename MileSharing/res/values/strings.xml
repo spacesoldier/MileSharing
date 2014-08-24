@@ -34,6 +34,15 @@
 
     <string name="settings">Настройки</string>
     <string name="go">Поехали</string>
+    <string name="distance">Расстояние:</string>
+    <string name="time">Время:</string>
+    <string name="km">км</string>
+    <string name="min">мин</string>
+    <string name="min">мин</string>
+    <string name="where_from">Откуда:</string>
+    <string name="where_to">Куда:</string>
+    <string name="mile">Количество миль:</string>
+    <string name="buy">Пополнить счёт</string>
 
     <string name="pass_menu">Passanger</string>
     <string name="driver_menu">Driver</string>

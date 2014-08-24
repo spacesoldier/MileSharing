@@ -10,8 +10,10 @@ import android.util.Log;
 import android.widget.*;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.model.*;
+import com.soloway.city.milesharing.activity.cash.CashFragment;
 import com.soloway.city.milesharing.activity.navigationDrawer.NavigationDrawerFragment;
 import com.soloway.city.milesharing.activity.profile.MyProfileFragment;
+import com.soloway.city.milesharing.activity.rout.RoutFragment;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.HttpPost;
@@ -576,12 +578,12 @@ public class MainMapActivity extends ActionBarActivity implements
                 dur = v2GetRouteDirection.getDurationValue(document);
                 dis = v2GetRouteDirection.getDistanceValue(document);
 
-                tvDis.setText("Distance: "
+                tvDis.setText(getString(R.string.distance) + " "
                         + String.valueOf((float) dis / 1000)
-                        + " km");
-                tvDur.setText("Time: "
+                        + " " + getString(R.string.km));
+                tvDur.setText(getString(R.string.time) + " "
                         + String.valueOf((int) dur / 60)
-                        + " minutes");
+                        + " " + getString(R.string.min));
 
                 infoLayout.setVisibility(View.VISIBLE);
                 btnGo.setOnClickListener(new OnClickListener() {
@@ -636,10 +638,11 @@ public class MainMapActivity extends ActionBarActivity implements
                 }
                 break;
             case 1:
-                fragment = new PassDriveFragment();
+                fragment = RoutFragment.newInstance((float) dis / 1000,(int) dur / 60);
+
                 break;
             case 2:
-                fragment = new NotifyFragment();
+                fragment = CashFragment.newInstance();
                 break;
             case 3:
                 break;

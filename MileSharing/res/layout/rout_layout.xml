@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_height="match_parent">
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@android:color/darker_gray"
+              android:text="@string/where_from"
+              android:id="@+id/whereFromLabel"
+              android:textSize="18sp"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@android:color/darker_gray"
+              android:text="@string/where_to"
+              android:layout_marginTop="20dp"
+              android:layout_below="@+id/whereFrom"
+              android:id="@+id/whereToLabel"
+              android:textSize="18sp"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@android:color/darker_gray"
+              android:text="@string/distance"
+              android:layout_below="@+id/whereTo"
+              android:layout_marginTop="20dp"
+              android:id="@+id/distanceLabel"
+              android:textSize="18sp"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@android:color/darker_gray"
+              android:text="@string/time"
+              android:layout_below="@+id/distance"
+              android:layout_marginTop="20dp"
+              android:id="@+id/timeLabel"
+              android:textSize="18sp"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/blue_notsotransparent"
+              android:layout_toRightOf="@+id/distanceLabel"
+              android:layout_marginLeft="20dp"
+              android:id="@+id/whereFrom"
+              android:textSize="18sp"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/blue_notsotransparent"
+              android:layout_marginTop="20dp"
+              android:layout_toRightOf="@+id/distanceLabel"
+              android:layout_marginLeft="20dp"
+              android:id="@+id/whereTo"
+              android:layout_below="@+id/whereFrom"
+              android:textSize="18sp"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/blue_notsotransparent"
+              android:id="@+id/distance"
+              android:layout_below="@+id/whereTo"
+              android:layout_toRightOf="@+id/distanceLabel"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="20dp"
+              android:textSize="18sp"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/blue_notsotransparent"
+              android:id="@+id/time"
+              android:layout_below="@+id/distance"
+              android:layout_toRightOf="@+id/distanceLabel"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="20dp"
+              android:textSize="18sp"
+              android:layout_height="wrap_content"/>
+
+</RelativeLayout>

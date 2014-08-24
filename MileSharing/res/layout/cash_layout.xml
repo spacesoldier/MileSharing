@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:paddingBottom="50dp"
+                android:layout_height="match_parent">
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/blue_notsotransparent"
+              android:id="@+id/mile"
+              android:textSize="36sp"
+              android:layout_marginTop="20dp"
+              android:paddingBottom="20dp"
+              android:text="50"
+              android:layout_centerInParent="true"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@android:color/darker_gray"
+              android:text="@string/mile"
+              android:layout_above="@+id/mile"
+              android:id="@+id/mileLabel"
+              android:layout_centerHorizontal="true"
+              android:textSize="24sp"
+              android:layout_height="wrap_content"/>
+
+    <Button android:layout_width="match_parent"
+            android:id="@+id/buy"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_above="@+id/icons"
+            android:background="@drawable/button_selector"
+            android:text="@string/buy"
+            android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:id="@+id/icons"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content">
+    <ImageView android:layout_width="50dp"
+               android:scaleType="fitXY"
+               android:src="@drawable/paypal"
+               android:layout_margin="5dp"
+               android:layout_height="30dp"/>
+    <ImageView android:layout_width="50dp"
+               android:scaleType="fitXY"
+               android:layout_margin="5dp"
+               android:src="@drawable/visa"
+               android:layout_height="30dp"/>
+    <ImageView android:layout_width="50dp"
+               android:layout_margin="5dp"
+               android:scaleType="fitXY"
+               android:src="@drawable/yandex"
+               android:layout_height="30dp"/>
+    </LinearLayout>
+</RelativeLayout>
