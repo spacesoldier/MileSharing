@@ -622,10 +622,17 @@ public class MainMapActivity extends ActionBarActivity implements
 
 // OTHER STUFF
 
-    public void removeFragment() {
+    private void removeFragment() {
         List<Fragment> fragments = getSupportFragmentManager().getFragments();
         if (mapLayout.getVisibility() == View.GONE)
             getSupportFragmentManager().beginTransaction().remove(fragments.get(fragments.size() - 1)).commit();
+    }
+
+    private void showMapFragment() {
+        if (mapLayout != null) {
+            removeFragment();
+            mapLayout.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override
@@ -633,13 +640,10 @@ public class MainMapActivity extends ActionBarActivity implements
         Fragment fragment = null;
         switch (position) {
             case 0:
-                if (mapLayout != null) {
-                    removeFragment();
-                    mapLayout.setVisibility(View.VISIBLE);
-                }
+                showMapFragment();
                 break;
             case 1:
-                fragment = RoutFragment.newInstance((float) dis / 1000,(int) dur / 60);
+                fragment = RoutFragment.newInstance((float) dis / 1000, (int) dur / 60, new LatLng(googleMap.getMyLocation().getLatitude(), googleMap.getMyLocation().getLongitude()), toPosition);
                 break;
             case 2:
                 fragment = CashFragment.newInstance();
@@ -663,11 +667,24 @@ public class MainMapActivity extends ActionBarActivity implements
 
     @Override
     public void onNavigationDrawerRoleChanged() {
-        switch (RoleHelper.getRole()){
+        CameraUpdate cu;
+        switch (RoleHelper.getRole()) {
             case RoleHelper.ROLE_PASS:
+                showMapFragment();
+                if (googleMap != null) {
+                    googleMap.clear();
+                    cu = CameraUpdateFactory.newLatLng(new LatLng(googleMap.getMyLocation().getLatitude(), googleMap.getMyLocation().getLongitude()));
+                    googleMap.animateCamera(cu);
+                }
                 Toast.makeText(getApplicationContext(), getString(R.string.toast_pass), Toast.LENGTH_LONG).show();
                 break;
             case RoleHelper.ROLE_DRIVER:
+                showMapFragment();
+                if (googleMap != null) {
+                    googleMap.clear();
+                    cu = CameraUpdateFactory.newLatLng(new LatLng(googleMap.getMyLocation().getLatitude(), googleMap.getMyLocation().getLongitude()));
+                    googleMap.animateCamera(cu);
+                }
                 Toast.makeText(getApplicationContext(), getString(R.string.toast_driver), Toast.LENGTH_LONG).show();
                 break;
         }
