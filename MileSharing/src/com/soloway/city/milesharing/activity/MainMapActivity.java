@@ -6,10 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.graphics.Point;
+import android.util.Log;
 import android.widget.*;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.model.*;
 import com.soloway.city.milesharing.activity.navigationDrawer.NavigationDrawerFragment;
+import com.soloway.city.milesharing.activity.profile.MyProfileFragment;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.HttpPost;
@@ -98,6 +100,7 @@ public class MainMapActivity extends ActionBarActivity implements
 
     private Marker marker;
     private RelativeLayout infoLayout;
+    private RelativeLayout mapLayout;
     private TextView tvDis;
     private TextView tvDur;
     private Button btnGo;
@@ -111,6 +114,7 @@ public class MainMapActivity extends ActionBarActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_map);
 
+
         mNavigationDrawerFragment = (NavigationDrawerFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.navigation_drawer);
         mTitle = getTitle();
@@ -120,6 +124,7 @@ public class MainMapActivity extends ActionBarActivity implements
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
         infoLayout = (RelativeLayout) findViewById(R.id.info);
+        mapLayout = (RelativeLayout) findViewById(R.id.mapLayout);
         tvDis = (TextView) findViewById(R.id.distance);
         tvDur = (TextView) findViewById(R.id.time);
         btnGo = (Button) findViewById(R.id.go);
@@ -250,14 +255,14 @@ public class MainMapActivity extends ActionBarActivity implements
     private void showNotifyDialog() {
         FragmentManager fragMan = getSupportFragmentManager();
         FragmentTransaction fragTransaction = fragMan.beginTransaction();
-        RelativeLayout rl = (RelativeLayout) findViewById(R.id.relative_layout);
+        RelativeLayout rl = (RelativeLayout) findViewById(R.id.mapLayout);
         Fragment myFrag = new NotifyFragment();
         fragTransaction.add(rl.getId(), myFrag, "fragmentNotify");
         fragTransaction.commit();
     }
 
     private void showRole() {
-        RelativeLayout rl = (RelativeLayout) findViewById(R.id.relative_layout);
+        RelativeLayout rl = (RelativeLayout) findViewById(R.id.mapLayout);
         Fragment fragPD = new PassDriveFragment();
         getSupportFragmentManager().beginTransaction()
                 .add(rl.getId(), fragPD, "fragmentPassDriver").commit();
@@ -582,6 +587,7 @@ public class MainMapActivity extends ActionBarActivity implements
                 btnGo.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View view) {
+                        infoLayout.setVisibility(View.GONE);
                         showLogin();
                     }
                 });
@@ -613,16 +619,27 @@ public class MainMapActivity extends ActionBarActivity implements
 
 // OTHER STUFF
 
+    public void removeFragment() {
+        List<Fragment> fragments = getSupportFragmentManager().getFragments();
+        if (mapLayout.getVisibility() == View.GONE)
+            getSupportFragmentManager().beginTransaction().remove(fragments.get(fragments.size() - 1)).commit();
+    }
+
     @Override
     public void onNavigationDrawerItemSelected(int position) {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        Fragment fragment;
+        Fragment fragment = null;
         switch (position) {
             case 0:
+                if (mapLayout != null) {
+                    removeFragment();
+                    mapLayout.setVisibility(View.VISIBLE);
+                }
                 break;
             case 1:
+                fragment = new PassDriveFragment();
                 break;
             case 2:
+                fragment = new NotifyFragment();
                 break;
             case 3:
                 break;
@@ -632,9 +649,12 @@ public class MainMapActivity extends ActionBarActivity implements
                 break;
         }
 
-//        fragmentManager.beginTransaction()
-//                .replace(R.id.content_frame, fragment)
-//                .commit();
+        if (fragment != null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.content_frame, fragment)
+                    .commit();
+            mapLayout.setVisibility(View.GONE);
+        }
 
     }
 
