@@ -58,10 +58,11 @@ public class NavigationDrawerFragment extends Fragment {
     private View mFragmentContainerView;
 
     private NavigationDrawerAdapter adapter;
-    
+
     private int mCurrentSelectedPosition = 0;
     private boolean mFromSavedInstanceState;
     private boolean mUserLearnedDrawer;
+    private boolean isSettingsOpened;
 
     public NavigationDrawerFragment() {
     }
@@ -87,7 +88,7 @@ public class NavigationDrawerFragment extends Fragment {
     }
 
     @Override
-    public void onActivityCreated (Bundle savedInstanceState) {
+    public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         // Indicate that this fragment would like to influence the set of actions in the action bar.
         setHasOptionsMenu(true);
@@ -95,7 +96,7 @@ public class NavigationDrawerFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+                             Bundle savedInstanceState) {
         View fragmentView = inflater.inflate(
                 R.layout.fragment_navigation_drawer, container, false);
         mDrawerListView = (ListView) fragmentView.findViewById(R.id.menuList);
@@ -156,7 +157,11 @@ public class NavigationDrawerFragment extends Fragment {
                 if (!isAdded()) {
                     return;
                 }
-                setTitle(getResources().getStringArray(R.array.menu_items)[mCurrentSelectedPosition]);
+                if (!isSettingsOpened) {
+                    setTitle(getResources().getStringArray(R.array.menu_items)[mCurrentSelectedPosition]);
+                } else {
+                    setTitle(getString(R.string.settings));
+                }
                 getActivity().supportInvalidateOptionsMenu(); // calls onPrepareOptionsMenu()
             }
 
@@ -220,6 +225,7 @@ public class NavigationDrawerFragment extends Fragment {
 
     private void selectItem(int position) {
         mCurrentSelectedPosition = position;
+        isSettingsOpened = false;
         if (mDrawerListView != null) {
             mDrawerListView.setItemChecked(position, true);
         }
@@ -276,7 +282,7 @@ public class NavigationDrawerFragment extends Fragment {
         return ((ActionBarActivity) getActivity()).getSupportActionBar();
     }
 
-    private void setTitle(String title){
+    private void setTitle(String title) {
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
@@ -286,7 +292,7 @@ public class NavigationDrawerFragment extends Fragment {
     private View.OnClickListener onRoleListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            switch (view.getId()){
+            switch (view.getId()) {
                 case R.id.passButton:
                     RoleHelper.setRole(RoleHelper.ROLE_PASS);
                     break;
@@ -303,8 +309,8 @@ public class NavigationDrawerFragment extends Fragment {
         }
     };
 
-    private void updateRole(){
-        if(RoleHelper.getRole() == RoleHelper.ROLE_DRIVER){
+    private void updateRole() {
+        if (RoleHelper.getRole() == RoleHelper.ROLE_DRIVER) {
             driverRoleView.setBackgroundColor(getResources().getColor(R.color.selected_role_color));
             passRoleView.setBackgroundColor(Color.TRANSPARENT);
         } else {
@@ -316,6 +322,8 @@ public class NavigationDrawerFragment extends Fragment {
     private View.OnClickListener onSettingsClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
+            isSettingsOpened = true;
+            mDrawerLayout.closeDrawers();
             if (mCallbacks != null) {
                 mCallbacks.onNavigationDrawerSettingsSelected();
             }
@@ -331,7 +339,9 @@ public class NavigationDrawerFragment extends Fragment {
          * Called when an item in the navigation drawer is selected.
          */
         public void onNavigationDrawerItemSelected(int position);
+
         public void onNavigationDrawerRoleChanged();
+
         public void onNavigationDrawerSettingsSelected();
     }
 }
